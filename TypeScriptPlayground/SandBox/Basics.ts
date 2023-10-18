@@ -11,6 +11,7 @@ const swapper_in_place=(a:number,b:number):[number,number]=>{
     a = a-b
 return [a,b]
 }
+//
 console.log(swapper_in_place(3,5))
 let greet:Function;
 greet =(name:string)=>{
