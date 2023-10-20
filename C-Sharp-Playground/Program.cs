@@ -9,7 +9,7 @@ class Program
  
      static void Main()
     {
-     
+     Console.WriteLine(BackspaceCompare.BackspaceCompare_v2("y#fo##f","y#f#o##f"));
     }
    
     

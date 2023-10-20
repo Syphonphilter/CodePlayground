@@ -1,7 +1,7 @@
  public class BackspaceCompare{
 
  
- bool BackspaceCompare_v1(string s, string t)
+ public static bool BackspaceCompare_v1(string s, string t)
     {
       if(s.Length<1&&t.Length>200){
         return false;
@@ -21,7 +21,7 @@
                 
       }
 
-       static bool BackspaceCompare_v2(string s, string t)
+       public static bool BackspaceCompare_v2(string s, string t)
         {
         Stack<string> s1 = new Stack<string>();
         Stack<string> s2 = new Stack<string>();
@@ -29,7 +29,7 @@
             if(x=='#'&& s1.Count>0){
             s1.Pop();
             }
-            else {
+            else if (x!='#') {
             s1.Push(x.ToString());
             }
             
@@ -38,11 +38,39 @@
             if(x=='#'&& s2.Count>0){
             s2.Pop();
             }
-            else {
+            else if (x!='#')  {
             s2.Push(x.ToString());
             }
             
         }
+        
+        
+        return s1.SequenceEqual(s2);
+                    
+        }
+         public static bool BackspaceCompare_v3(string s, string t)
+        {
+            
+        Stack<string> s1 = new Stack<string>();
+        Stack<string> s2 = new Stack<string>();
+        Parallel.ForEach(s.ToList(),x=>{
+            if(x=='#'&& s1.Count>0){
+            s1.Pop();
+            }
+            else if (x!='#') {
+            s1.Push(x.ToString());
+            }
+            
+        });
+        Parallel.ForEach(t.ToList(),x=>{
+            if(x=='#'&& s2.Count>0){
+            s2.Pop();
+            }
+            else if (x!='#') {
+            s2.Push(x.ToString());
+            }
+            
+        });
         
         
         return s1.SequenceEqual(s2);
