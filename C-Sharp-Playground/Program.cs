@@ -14,7 +14,7 @@ class Program
     static bool BackspaceCompare(string s, string t)
     {
       if(!s.Contains("#")||!t.Contains("#")){
-        return false;
+        return true;
         
       }
       s= new string(s.ToArray().TakeWhile((c,i)=> ) );
