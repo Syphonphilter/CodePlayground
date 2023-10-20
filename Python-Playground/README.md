@@ -31,6 +31,9 @@ pip install -r requirements.txt
 Usage
 Provide instructions on how to use the project and make predictions.
 Include code examples if applicable.
+Execute this to select your desired classifier
+'''SelectedClassifier = input("Select your classifier, KNN-Baseline, RandomForest, Logistic-Regression, and Decision-Tree")
+print(SelectedClassifier)'''
 python
 Copy code
 # Example usage code
