@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
+using C_Sharp_Playground.Code;
 using Playground.Code;
 
 class Program
@@ -9,8 +10,12 @@ class Program
  
      static void Main()
     {
-     Console.WriteLine(BackspaceCompare.BackspaceCompare_v2("y#fo##f","y#f#o##f"));
+    int [] a = {793810624, 895642170, 685903712, 623789054, 468592370};
+    MinMaxSum.miniMaxSum(a.ToList());
+        
     }
+
+    
    
     
    
