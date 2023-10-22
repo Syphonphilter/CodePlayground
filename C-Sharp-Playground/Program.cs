@@ -10,10 +10,12 @@ class Program
  
      static void Main()
     {
-    int [] a = {793810624, 895642170, 685903712, 623789054, 468592370};
-    MinMaxSum.miniMaxSum(a.ToList());
+     
         
     }
+
+
+
 
     
    
