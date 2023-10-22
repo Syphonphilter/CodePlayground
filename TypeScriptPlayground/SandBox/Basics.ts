@@ -1,4 +1,5 @@
 import moment from "moment"
+
 //* Type Alias
 type stringOrNum = string|number;
 //* Function Definition
@@ -117,7 +118,7 @@ class person{
     // constructor(public name:string, public age:number, public gender:boolean){
     // }
     name:string;
-    private age:number;
+     age:number;
     gender:boolean;
 
     constructor(a:string,b:number,c:boolean){
@@ -131,12 +132,12 @@ let user = new person( 'baa',23,false);
 let user2 = new person( 'baa',23,false);
 let appPeople :person[]=[]
 appPeople.push(user)
-user  = 23;
-//* Pattern Matching
-function someFunction (data:number)=>{
-    return data when{
-        1 -> 'One',
-        2 -> 'Two',
-        _-> 'None'
-    };   
-}
+user.age  = 23;
+// //* Pattern Matching
+// function someFunction (data:number)=>{
+//     return data when{
+//         1 -> 'One',
+//         2 -> 'Two',
+//         _-> 'None'
+//     };   
+// }
