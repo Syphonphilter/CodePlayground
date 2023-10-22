@@ -1,5 +1,6 @@
 import moment from "moment"
-
+//* Type Alias
+type stringOrNum = string|number;
 //* Function Definition
 const getAreaOfCircle =(raduis:number)=>{
     return Math.PI* raduis**2
@@ -20,9 +21,10 @@ greet =(name:string)=>{
 const _math=(a:number,b:number,c?:number):void=>{
         // console.log(a+b)
 }
- const isValid=(id:string|number):boolean=>{
+ const isValid=(id:stringOrNum):boolean=>{
     return false;
  }
+
 //* Data Structures
 //* Arrays
 let name = ['bala','musa','musty']
@@ -67,6 +69,29 @@ let States :{
     capital:string,
     isFederalCapital:boolean
 }
+
+//* interfaces
+interface school{
+    name:string,
+    address:string,
+    performance(a:number):number,
+
+}
+let chs:school={
+    name:'cannan',
+    address:'shaka',
+    performance:(a:number)=>{
+        a=a**a
+        return a
+    }
+}
+const saySchool=(school:school)=>{
+console.log(school.name);
+}
+saySchool(chs);
+// YOU CAN ALSO USE INTERFACES WITH CLASSES and when the class object is called,
+// just let the type be the interface eg if class a implements interface b
+// then you can say let a:b and c = new a(a params)
 //* explicit types 
 let people:string[] = []
 people.push('bala')
@@ -77,3 +102,41 @@ let ids : string|number
 ids = 3;
 const de ={a:1}
 de.a = 1
+// * function Signatures
+let sum :(a:number, b:number, action:string)=> number;
+sum=(firstNum:number,secondNum:number, functionAction:string)=>{
+
+    return firstNum+secondNum
+}
+//////////* OOP
+//* CLASSES
+class person{
+
+    // you can comment this and pass the propeties directly to the constructors but ensure you add the access modifier
+    //like so 
+    // constructor(public name:string, public age:number, public gender:boolean){
+    // }
+    name:string;
+    private age:number;
+    gender:boolean;
+
+    constructor(a:string,b:number,c:boolean){
+        this.name = a;
+        this.age= b;
+        this.gender= c
+    }
+
+}
+let user = new person( 'baa',23,false);
+let user2 = new person( 'baa',23,false);
+let appPeople :person[]=[]
+appPeople.push(user)
+user  = 23;
+//* Pattern Matching
+function someFunction (data:number)=>{
+    return data when{
+        1 -> 'One',
+        2 -> 'Two',
+        _-> 'None'
+    };   
+}
