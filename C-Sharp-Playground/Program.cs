@@ -10,15 +10,9 @@ class Program
  
      static void Main()
     {
-    
-      Console.WriteLine(strStr("sad","sadbutsad"));
+  
     }
-    public static int strStr(string needle, string haystack){
-        string _haystack = haystack.ToLower();
-        string _needle= needle.ToLower();
-        return _haystack.IndexOf(_needle);
-       
-    }
+  
 
 
 

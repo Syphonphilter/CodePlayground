@@ -28,3 +28,4 @@ if (cluster.isMaster) { // Check if this is the master process.
   // Worker process exits after completing its task.
   process.exit(0);
 }
+//* ISOLATES CONCEPT IN DENO
