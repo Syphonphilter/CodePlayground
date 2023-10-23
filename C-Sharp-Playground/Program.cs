@@ -11,12 +11,20 @@ class Program
      static void Main()
     {
     
-        string name = "Bala Abdulkadir";
-        Console.WriteLine(name.Take(2).ToArray());
-    }
+      var fruits = new List<string>
+        {
+            "apple", "banana", "cherry", "apple", "date", "banana"
+        };
 
+// Create a lookup table based on the length of each fruit name
+var lookup = fruits.ToLookup(fruit => fruit.Length);
+foreach(var f in lookup[4]){
+    Console.WriteLine(f);
+    }
+    }
     public static int strStr(string needle, string haystack){
-        haystack.Substring(-1);
+        haystack = haystack.ToLower();
+        needle = needle.ToLower();
         return 1;
     }
 
