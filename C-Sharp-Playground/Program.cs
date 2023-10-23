@@ -10,10 +10,15 @@ class Program
  
      static void Main()
     {
-     
-        
+    
+        string name = "Bala Abdulkadir";
+        Console.WriteLine(name.Take(2).ToArray());
     }
 
+    public static int strStr(string needle, string haystack){
+        haystack.Substring(-1);
+        return 1;
+    }
 
 
 

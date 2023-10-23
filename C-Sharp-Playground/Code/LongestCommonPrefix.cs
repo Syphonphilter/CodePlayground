@@ -8,7 +8,7 @@ namespace Playground
             var commonPrefix = new string(strs.MinBy(s => s.Length)
             // using the takeWhile  loop fuction with the lambda expression to get each
             // char for the min value and match across all the values in the array where each char
-            // matches the min value else no common prefix
+            // matches the min value until it does not match and return the longest common prefix
             .TakeWhile((c, i) => strs.All(s => s[i] == c)).ToArray());
           return commonPrefix;
         }
