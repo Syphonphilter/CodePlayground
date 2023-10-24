@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Playground
 {
-	public partial class LongestCommonPrefix
+	public  class LongestCommonPrefix
 	{
         public static string LongestCommonPrefix_v1(string[] strs) {
             //finds the min value in the array
