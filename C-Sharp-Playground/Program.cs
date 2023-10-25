@@ -7,11 +7,11 @@ using Playground.Code;
 using Xunit.Sdk;
 
 class Program
-{  
+{
 
- 
-     static void Main()
+
+    static void Main()
     {
-       
+
     }
 }

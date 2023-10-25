@@ -1,80 +1,96 @@
- public class BackspaceCompare{
+public class BackspaceCompare
+{
 
- 
- public static bool BackspaceCompare_v1(string s, string t)
+
+    public static bool BackspaceCompare_v1(string s, string t)
     {
-      if(s.Length<1&&t.Length>200){
-        return false;
-      }
-  
-      do{
-          if(s.Contains('#') || t.Contains('#')){
-          Console.WriteLine(s.IndexOf('#'));
-          s = new string(s.TakeWhile((c,i)=>  i<s.IndexOf('#')-1).ToArray())+s.Substring(s.IndexOf("#") + "#".Length);
-          t = new string(t.TakeWhile((c,i)=>  i<t.IndexOf('#')-1).ToArray())+t.Substring(t.IndexOf("#") + "#".Length);
-          
-          }
-          
-      }while(s.Contains('#') || t.Contains('#'));
-      
-     return s==t;
-                
-      }
+        if (s.Length < 1 && t.Length > 200)
+        {
+            return false;
+        }
 
-       public static bool BackspaceCompare_v2(string s, string t)
+        do
         {
+            if (s.Contains('#') || t.Contains('#'))
+            {
+                Console.WriteLine(s.IndexOf('#'));
+                s = new string(s.TakeWhile((c, i) => i < s.IndexOf('#') - 1).ToArray()) + s.Substring(s.IndexOf("#") + "#".Length);
+                t = new string(t.TakeWhile((c, i) => i < t.IndexOf('#') - 1).ToArray()) + t.Substring(t.IndexOf("#") + "#".Length);
+
+            }
+
+        } while (s.Contains('#') || t.Contains('#'));
+
+        return s == t;
+
+    }
+
+    public static bool BackspaceCompare_v2(string s, string t)
+    {
         Stack<string> s1 = new Stack<string>();
         Stack<string> s2 = new Stack<string>();
-        foreach(char x in s){
-            if(x=='#'&& s1.Count>0){
-            s1.Pop();
-            }
-            else if (x!='#') {
-            s1.Push(x.ToString());
-            }
-            
-        }
-        foreach(char x in t){
-            if(x=='#'&& s2.Count>0){
-            s2.Pop();
-            }
-            else if (x!='#')  {
-            s2.Push(x.ToString());
-            }
-            
-        }
-        
-        
-        return s1.SequenceEqual(s2);
-                    
-        }
-         public static bool BackspaceCompare_v3(string s, string t)
+        foreach (char x in s)
         {
-            
+            if (x == '#' && s1.Count > 0)
+            {
+                s1.Pop();
+            }
+            else if (x != '#')
+            {
+                s1.Push(x.ToString());
+            }
+
+        }
+        foreach (char x in t)
+        {
+            if (x == '#' && s2.Count > 0)
+            {
+                s2.Pop();
+            }
+            else if (x != '#')
+            {
+                s2.Push(x.ToString());
+            }
+
+        }
+
+
+        return s1.SequenceEqual(s2);
+
+    }
+    public static bool BackspaceCompare_v3(string s, string t)
+    {
+
         Stack<string> s1 = new Stack<string>();
         Stack<string> s2 = new Stack<string>();
-        Parallel.ForEach(s.ToList(),x=>{
-            if(x=='#'&& s1.Count>0){
-            s1.Pop();
+        Parallel.ForEach(s.ToList(), x =>
+        {
+            if (x == '#' && s1.Count > 0)
+            {
+                s1.Pop();
             }
-            else if (x!='#') {
-            s1.Push(x.ToString());
+            else if (x != '#')
+            {
+                s1.Push(x.ToString());
             }
-            
+
         });
-        Parallel.ForEach(t.ToList(),x=>{
-            if(x=='#'&& s2.Count>0){
-            s2.Pop();
+        Parallel.ForEach(t.ToList(), x =>
+        {
+            if (x == '#' && s2.Count > 0)
+            {
+                s2.Pop();
             }
-            else if (x!='#') {
-            s2.Push(x.ToString());
+            else if (x != '#')
+            {
+                s2.Push(x.ToString());
             }
-            
+
         });
-        
-        
+
+
         return s1.SequenceEqual(s2);
-                    
-        }
-      
- }
+
+    }
+
+}
