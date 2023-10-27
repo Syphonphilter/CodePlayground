@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Formats.Asn1;
-using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
-using C_Sharp_Playground.Code;
-using Playground.Code;
-using Xunit.Sdk;
 
-class Program
+public class LengthOfLastWord
 {
-
-
-    static void Main()
+    public static int LengthOfLastWord_regex(string s)
     {
-        LengthOfLastWord("a");
+        Regex regex1 = new Regex(@"[A-Za-z]+");
+        MatchCollection words = regex1.Matches(s);
+        Console.WriteLine(words[words.Count - 1]);
+        return words[words.Count - 1].Length;
 
     }
-    public static int LengthOfLastWord(string s)
+    public static int LengthOfLastWord_charArray(string s)
     {
 
         int count = 0;
