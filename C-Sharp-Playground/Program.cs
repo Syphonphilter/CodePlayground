@@ -18,11 +18,17 @@ class Program
         AddBinary("1110001", "110100100");
 
     }
-    public static string AddBinary(string a, string b)
+    public static int MySqrt(int num)
     {
-        UInt128 _a = UInt128.Parse(a, System.Globalization.NumberStyles.AllowHexSpecifier);
-        UInt128 _b = UInt128.Parse(b, System.Globalization.NumberStyles.AllowHexSpecifier);
-        UInt128 sum = _a + _b;
-        return Convert.ToString((byte)sum, 2);
+        int val = 0;
+        for (int i = 1; i < 10; i++)
+        {
+            if (i * i > num)
+            {
+                break;
+            }
+            val = i;
+        }
+    
     }
 }

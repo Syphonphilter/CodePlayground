@@ -1,11 +1,11 @@
 ﻿using System;
 namespace Playground
 {
-	public class TwoNumSum
-	{
-		public TwoNumSum()
-		{
-		}
+    public class TwoNumSum
+    {
+        public TwoNumSum()
+        {
+        }
 
         // A function that returns  the positions of two nums in a given array of n length to get a target sum
         int[] TwoNums(int[] nums, int target)
