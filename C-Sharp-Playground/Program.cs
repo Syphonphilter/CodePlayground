@@ -18,17 +18,8 @@ class Program
         AddBinary("1110001", "110100100");
 
     }
-    public static int MySqrt(int num)
+    public static int ClimbStairs(int num)
     {
-        int val = 0;
-        for (int i = 1; i < 10; i++)
-        {
-            if (i * i > num)
-            {
-                break;
-            }
-            val = i;
-        }
-    
+
     }
 }
