@@ -7,7 +7,21 @@ namespace C_Sharp_Playground.Code
         /// </summary>
         /// <param name="num">The number of steps in the staircase.</param>
         /// <returns>The number of distinct ways to climb to the top of the staircase.</returns>
-        public static int ClimbStairs_(int num)
+        public static int ClimbStairs_BottomUpApproach(int num)
+        {
+            int[] mem = new int[num + 1];
+            mem[num] = 1;
+            mem[num - 1] = 1;
+
+            for (int i = num - 2; i >= 0; i--)
+            {
+                mem[i] = mem[i + 1] + mem[i + 2];
+            }
+
+            return mem[0];
+        }
+
+        public static int ClimbStairs_TopDownApproach(int num)
         {
             int[] dp = new int[num + 1];
             dp[0] = 1;
