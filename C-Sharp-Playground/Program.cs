@@ -16,51 +16,38 @@ class Program
 
     static void Main()
     {
-        List<int> lists = new List<int>();
-        lists.Add(1);
-        lists.Add(2);
-        lists.Add(2);
-        lists.Add(2);
-        lists.Add(4);
-        lists.Add(4);
-        ListConverter listConverter = new ListConverter();
-        ListNode test = listConverter.ConvertToLinkedList(lists);
-
-        Console.WriteLine(DeleteDuplicates(test));
+        List<int> ints = new List<int>();
+        ints.Add(10);
+        ints.Add(5);
+        ints.Add(20);
+        ints.Add(20);
+        ints.Add(2);
+        ints.Add(5);
+        ints.Add(25);
+        ints.Add(1);
+        Console.WriteLine(breakingRecords(ints));
 
     }
-    public static ListNode DeleteDuplicates(ListNode head)
+    public static List<int> breakingRecords(List<int> scores)
     {
-        if (head == null)
+        int maxScore = scores[0];
+        int minScore = scores[0];
+        List<int> recordSheet = new List<int> { 0, 0 };
+
+        for (int i = 1; i < scores.Count; i++)
         {
-            return head;
-        }
-    
-        ListNode final = new ListNode(head.data);
-        ListNode current = final;
-    
-        while (head != null)
-        {
-            if (current.data == head.data)
+            if (scores[i] > maxScore)
             {
-                if (current.next == head && head.next == null)
-                {
-                    current.next = null;
-                    head = null;
-                    break;
-                }
-            
-                head = head.next;
-                current.next = null;
+                maxScore = scores[i];
+                recordSheet[0]++;
             }
-            else
+            else if (scores[i] < minScore)
             {
-                current.next = head;
-                head = head.next;
-                current = current.next;
+                minScore = scores[i];
+                recordSheet[1]++;
             }
         }
-    
-        return final;
+
+        return recordSheet;
     }
 }
