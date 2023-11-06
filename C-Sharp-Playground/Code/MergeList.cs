@@ -1,16 +1,6 @@
 public class MergeList
 {
-    public ListNode ConvertToLinkedList(List<int> list)
-    {
-        ListNode final = new ListNode(-1);
-        ListNode current = final;
-        foreach (int num in list)
-        {
-            current.next = new ListNode(num);
-            current = current.next;
-        }
-        return final.next;
-    }
+    
 
     public ListNode MergeTwoSortedList(ListNode list1, ListNode list2)
     {
