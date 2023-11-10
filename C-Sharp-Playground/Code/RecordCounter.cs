@@ -20,6 +20,7 @@ namespace C_Sharp_Playground.Code
                     minScore = scores[i];
                     recordSheet[1]++;
                 }
+                Console.WriteLine(string.Join(',', recordSheet));
             }
 
             return recordSheet;

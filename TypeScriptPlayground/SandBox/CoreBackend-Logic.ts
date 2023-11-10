@@ -7,7 +7,7 @@ if (cluster.isMaster)
   // Create a worker for each CPU core
   for (let i = 0; i < numCPUs; i++) {
     const clusterId = cluster.fork();
-    console.log({clusterId}) // Create a new child worker process for each CPU core.
+    // Create a new child worker process for each CPU core.
   }
   cluster.on('exit', (worker:any, code:any, signal:any) => {
     console.log(`Worker ${worker.process.pid} died`); // Log when a worker process dies.

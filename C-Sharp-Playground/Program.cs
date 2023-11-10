@@ -16,38 +16,51 @@ class Program
 
     static void Main()
     {
-        List<int> ints = new List<int>();
-        ints.Add(10);
-        ints.Add(5);
-        ints.Add(20);
-        ints.Add(20);
-        ints.Add(2);
-        ints.Add(5);
-        ints.Add(25);
-        ints.Add(1);
-        Console.WriteLine(breakingRecords(ints));
+        var x = InorderTraversal(CreateSampleTree());
+        Console.WriteLine(x);
 
     }
-    public static List<int> breakingRecords(List<int> scores)
-    {
-        int maxScore = scores[0];
-        int minScore = scores[0];
-        List<int> recordSheet = new List<int> { 0, 0 };
 
-        for (int i = 1; i < scores.Count; i++)
+    public static TreeNode CreateSampleTree()
+    {
+        // Creating nodes
+        TreeNode root = new TreeNode(1);
+        TreeNode node2 = new TreeNode(2);
+        TreeNode node3 = new TreeNode(3);
+        TreeNode node4 = new TreeNode(4);
+        TreeNode node5 = new TreeNode(5);
+        TreeNode node6 = new TreeNode(6);
+        TreeNode node7 = new TreeNode(7);
+
+        // Building the tree
+        root.left = node2;
+        root.right = node3;
+
+        node2.left = node4;
+        node2.right = node5;
+
+        node3.left = node6;
+        node3.right = node7;
+
+        return root;
+    }
+
+    public static IList<int> InorderTraversal(TreeNode root)
+    {
+        Stack<int> stack = new Stack<int>();
+        void Traverse(TreeNode node)
         {
-            if (scores[i] > maxScore)
+            if (node == null)
             {
-                maxScore = scores[i];
-                recordSheet[0]++;
+                return;
             }
-            else if (scores[i] < minScore)
-            {
-                minScore = scores[i];
-                recordSheet[1]++;
-            }
+            Traverse(node.left);
+            stack.Push(node.val);
+            Traverse(node.right);
         }
 
-        return recordSheet;
+        Traverse(root);
+
+        return stack.ToList();
     }
 }
