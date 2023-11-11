@@ -17,7 +17,7 @@ class Program
 
     static void Main()
     {
-        var x = IsSameTree(CreateSampleTree(1, 2, 3), CreateSampleTree(1,2,3));
+        var x = IsSameTree(CreateSampleTree(1, 2, 3), CreateSampleTree(1, 2, 3));
         Console.WriteLine(x);
 
     }
@@ -41,30 +41,32 @@ class Program
 
     public static bool IsSameTree(TreeNode p, TreeNode q)
     {
-
         if ((p != null && q == null) || (p == null && q != null))
         {
             return false;
         }
         Stack<int> stack = new Stack<int>();
-        List<int> Traverse(TreeNode node)
+        Stack<int> stack2 = new Stack<int>();
+        void Traverse(TreeNode node, bool isq)
         {
             if (node == null)
             {
-                return new List<int>();
+                return;
             }
-            Traverse(node.left);
-            stack.Push(node.val);
-            Traverse(node.right);
-            return stack.Reverse().ToList();
+            Traverse(node.left, isq);
+            if (isq)
+            {
+                stack.Push(node.val);
+            }
+            else
+            {
+                stack2.Push(node.val);
+            }
+            Traverse(node.right, isq);
         }
-
-
-        List<int> a = Traverse(p);
-        List<int> b = Traverse(q);
-
-
-        return a == b;
+        Traverse(p, false);
+        Traverse(q, true);
+        return stack.Reverse().ToList().SequenceEqual(stack2.Reverse().ToList());
     }
     public static IList<int> InorderTraversal(TreeNode root)
     {
