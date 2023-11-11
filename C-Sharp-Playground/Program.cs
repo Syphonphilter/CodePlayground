@@ -41,32 +41,16 @@ class Program
 
     public static bool IsSameTree(TreeNode p, TreeNode q)
     {
-        if ((p != null && q == null) || (p == null && q != null))
-        {
+        // Base case: if both nodes are null, they are the same
+        if (p == null && q == null)
+            return true;
+
+        // If one node is null and the other is not, they are not the same
+        if (p == null || q == null)
             return false;
-        }
-        Stack<int> stack = new Stack<int>();
-        Stack<int> stack2 = new Stack<int>();
-        void Traverse(TreeNode node, bool isq)
-        {
-            if (node == null)
-            {
-                return;
-            }
-            Traverse(node.left, isq);
-            if (isq)
-            {
-                stack.Push(node.val);
-            }
-            else
-            {
-                stack2.Push(node.val);
-            }
-            Traverse(node.right, isq);
-        }
-        Traverse(p, false);
-        Traverse(q, true);
-        return stack.Reverse().ToList().SequenceEqual(stack2.Reverse().ToList());
+
+        // Check if the values are the same and recursively check left and right subtrees
+        return p.val == q.val && IsSameTree(p.left, q.left) && IsSameTree(p.right, q.right);
     }
     public static IList<int> InorderTraversal(TreeNode root)
     {
