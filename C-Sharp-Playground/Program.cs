@@ -17,40 +17,52 @@ class Program
 
     static void Main()
     {
-        var x = IsSameTree(CreateSampleTree(1, 2, 3), CreateSampleTree(1, 2, 3));
+        var x = IsSymmetric(CreateSampleTree(1, 2, 2, 3, 4, 4, 3));
+    
         Console.WriteLine(x);
 
     }
-
-    public static TreeNode CreateSampleTree(int a, int b, int c)
+    public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g)
     {
         // Creating nodes
         TreeNode root = new TreeNode(a);
-        TreeNode node2 = null;
-        TreeNode node3 = new TreeNode(b);
-        TreeNode node4 = new TreeNode(c);
+        TreeNode node2 = new TreeNode(b);
+        TreeNode node3 = new TreeNode(c);
+        TreeNode node4 = new TreeNode(d);
+        TreeNode node5 = new TreeNode(e);
+        TreeNode node6 = new TreeNode(f);
+        TreeNode node7 = new TreeNode(g);
 
         // Building the tree
         root.left = node2;
         root.right = node3;
-
-        node3.left = node4;
+        node2.left = node4;
+        node2.right = node5;
+        node3.left = node6;
+        node3.right = node7;
 
         return root;
     }
 
-    public static bool IsSameTree(TreeNode p, TreeNode q)
+    public static bool IsSymmetric(TreeNode root)
     {
-        // Base case: if both nodes are null, they are the same
-        if (p == null && q == null)
-            return true;
+        TreeNode leftNode = new TreeNode();
+        TreeNode rightNode = new TreeNode();
+        leftNode = root.left;
+        rightNode = root.right;
+        //base case 
 
-        // If one node is null and the other is not, they are not the same
-        if (p == null || q == null)
+        if (root == null)
+        {
             return false;
+        }
+        if (leftNode.val != rightNode.val)
+        {
+            return false;
+        }
 
-        // Check if the values are the same and recursively check left and right subtrees
-        return p.val == q.val && IsSameTree(p.left, q.left) && IsSameTree(p.right, q.right);
+
+        return leftNode.left.val == rightNode.right.val && IsSymmetric(leftNode) == IsSymmetric(rightNode);
     }
     public static IList<int> InorderTraversal(TreeNode root)
     {
