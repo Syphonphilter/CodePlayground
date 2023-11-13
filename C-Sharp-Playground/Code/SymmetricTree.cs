@@ -4,23 +4,31 @@ namespace C_Sharp_Playground.Code
     {
         public static bool IsSymmetric(TreeNode root)
         {
-            TreeNode leftNode = new TreeNode();
-            TreeNode rightNode = new TreeNode();
-            leftNode = root.left;
-            rightNode = root.right;
+            var leftNode = root.left;
+            var rightNode = root.right;
             //base case 
-
-            if (root == null)
+            bool checkSymmetry(TreeNode left, TreeNode right)
             {
-                return false;
+                // Check if both left and right nodes are null
+                if (left == null && right == null)
+                {
+                    return true;
+                }
+                // Check if the values of left and right nodes are not equal
+                if (left != null && right != null && left.val != right.val)
+                {
+                    return false;
+                }
+                // Check if either left or right node is null while the other is not
+                if ((left == null && right != null) || (left != null && right == null))
+                {
+                    return false;
+                }
+                // Recursively check the symmetry of child nodes
+                return checkSymmetry(left.left, right.right) && checkSymmetry(left.right, right.left);
             }
-            if (leftNode.val != rightNode.val)
-            {
-                return false;
-            }
-
-
-            return leftNode.left.val == rightNode.right.val && IsSymmetric(leftNode) == IsSymmetric(rightNode);
+            return checkSymmetry(leftNode, rightNode);
         }
+
     }
 }
