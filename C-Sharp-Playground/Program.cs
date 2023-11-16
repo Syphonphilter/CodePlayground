@@ -10,6 +10,7 @@ using Xunit.Sdk;
 using System.Numerics;
 using C_Sharp_Playground.Code.Functions;
 using System.Collections;
+using C_Sharp_Playground.Code.Concepts;
 
 class Program
 {
@@ -17,9 +18,9 @@ class Program
 
     static void Main()
     {
-        var x = MaxDepth_2(CreateSampleTree(1, 2, 2, 4, 4, 4, 1, 2, 3));
-
-        Console.WriteLine(x);
+        var staff = new PrimaryConstructors.Employee(1, "Bala", "Jr Developer");
+        var promoted = staff.Promote("Sr Developer", 3);
+        Console.WriteLine(promoted);
 
     }
     public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g, int h, int i)
@@ -85,8 +86,8 @@ class Program
             return 0;
         }
 
-        int leftDepth = MaxDepth(root.left);
-        int rightDepth = MaxDepth(root.right);
+        int leftDepth = MaxDepth_3(root.left);
+        int rightDepth = MaxDepth_3(root.right);
 
         return Math.Max(leftDepth, rightDepth) + 1;
     }
