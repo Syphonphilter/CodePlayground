@@ -17,7 +17,7 @@ class Program
 
     static void Main()
     {
-        var x = MaxDepth(CreateSampleTree(1, 2, 2, 4, 4, 4, 1, 2, 3));
+        var x = MaxDepth_2(CreateSampleTree(1, 2, 2, 4, 4, 4, 1, 2, 3));
 
         Console.WriteLine(x);
 
