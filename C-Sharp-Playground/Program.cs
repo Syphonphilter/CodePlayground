@@ -78,7 +78,18 @@ class Program
         return depth;
     }
 
+    public static int MaxDepth_3(TreeNode root)
+    {
+        if (root == null)
+        {
+            return 0;
+        }
 
+        int leftDepth = MaxDepth(root.left);
+        int rightDepth = MaxDepth(root.right);
+
+        return Math.Max(leftDepth, rightDepth) + 1;
+    }
     public static int MaxDepth_2(TreeNode root)
     {
 
@@ -93,20 +104,24 @@ class Program
         {
             var leftNode = root.left;
             var rightNode = root.right;
-            int getDepth(TreeNode left, TreeNode right)
+            int getDepth(TreeNode node)
             {
                 int temp_depth = 1;
-                if (left == null && right == null)
+                if (node.left == null && node.right == null)
                 {
 
                 }
                 else
                 {
                     temp_depth++;
+                    getDepth(node.left);
+                    getDepth(node.right);
                 }
+
                 return temp_depth;
+
             }
-            depth = int.Max(getDepth(leftNode.left, leftNode.right), getDepth(rightNode.left, rightNode.right));
+            depth = int.Max(getDepth(leftNode.left), getDepth(rightNode.right));
         }
         return depth;
     }
