@@ -17,12 +17,12 @@ class Program
 
     static void Main()
     {
-        var x = IsSymmetric(CreateSampleTree(1, 2, 2, 4, 4, 4, 1));
+        var x = MaxDepth(CreateSampleTree(1, 2, 2, 4, 4, 4, 1, 2, 3));
 
         Console.WriteLine(x);
 
     }
-    public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g)
+    public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g, int h, int i)
     {
         // Creating nodes
         TreeNode root = new TreeNode(a);
@@ -32,16 +32,83 @@ class Program
         TreeNode node5 = new TreeNode(e);
         TreeNode node6 = new TreeNode(f);
         TreeNode node7 = new TreeNode(g);
+        TreeNode node8 = new TreeNode(h);
+        TreeNode node9 = new TreeNode(i);
 
         // Building the tree
         root.left = node2;
         root.right = node3;
-        node2.left = node4;
-        node2.right = node5;
-        node3.left = node6;
-        node3.right = node7;
+        node3.left = node4;
+        node3.right = node5;
+        node4.left = node6;
+        node4.right = node7;
+        node7.left = node8;
+        node7.right = node9;
 
         return root;
+    }
+
+    public static int MaxDepth(TreeNode root)
+    {
+        var leftNode = root.left;
+        var rightNode = root.right;
+        int depth = 1;
+        // Base Case
+        if (root == null)
+        {
+            depth = 0;
+        }
+
+        else
+        {
+            void Traverse(TreeNode node)
+            {
+
+                if (node.left == null && node.right == null)
+                {
+                    return;
+                }
+
+                Traverse(node.left);
+                Traverse(node.right);
+                depth++;
+            }
+            Traverse(root);
+        }
+        return depth;
+    }
+
+
+    public static int MaxDepth_2(TreeNode root)
+    {
+
+        int depth = 1;
+        // Base Case
+        if (root == null)
+        {
+            depth = 0;
+        }
+
+        else
+        {
+            var leftNode = root.left;
+            var rightNode = root.right;
+            int getDepth(TreeNode left, TreeNode right)
+            {
+                int temp_depth = 1;
+                if (left == null && right == null)
+                {
+
+                }
+                else
+                {
+                    temp_depth++;
+                }
+                return temp_depth;
+            }
+            depth = int.Max(getDepth(leftNode.left, leftNode.right), getDepth(rightNode.left, rightNode.right));
+        }
+        return depth;
     }
 
     public static bool IsSymmetric(TreeNode root)
@@ -81,6 +148,7 @@ class Program
     public static IList<int> InorderTraversal(TreeNode root)
     {
         Stack<int> stack = new Stack<int>();
+        int depth = 1;
         void Traverse(TreeNode node)
         {
             if (node == null)
