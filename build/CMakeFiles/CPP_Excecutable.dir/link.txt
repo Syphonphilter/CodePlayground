@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/CPP_Excecutable.dir/CPP_Playground/Code/main.cpp.o -o CPP_Excecutable  CPP_Playground/Utils/fmt-10.1.0/libfmtd.a 

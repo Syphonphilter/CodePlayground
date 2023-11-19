@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run CPP_Playground",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/CPP_Playground",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "preLaunchTask": "Build CPP_Playground",
+            "miDebuggerPath": "/usr/local/bin/gdb" // Specify the path to GDB if necessary
+        }
+    ]
+}

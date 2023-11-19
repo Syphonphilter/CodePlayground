@@ -57,7 +57,7 @@ RM = /usr/local/Cellar/cmake/3.27.8/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/syphonphilter/Projects/Playground/C++-Playground
+CMAKE_SOURCE_DIR = /Users/syphonphilter/Projects/Playground
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/syphonphilter/Projects/Playground/build
@@ -84,6 +84,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/local/Cellar/cmake/3.27.8/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/local/Cellar/cmake/3.27.8/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.27.8/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.27.8/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/local/Cellar/cmake/3.27.8/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/local/Cellar/cmake/3.27.8/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -116,6 +161,104 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named CPP_Executable
+
+# Build rule for target.
+CPP_Executable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CPP_Executable
+.PHONY : CPP_Executable
+
+# fast build rule for target.
+CPP_Executable/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/build
+.PHONY : CPP_Executable/fast
+
+#=============================================================================
+# Target rules for targets named fmt
+
+# Build rule for target.
+fmt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fmt
+.PHONY : fmt
+
+# fast build rule for target.
+fmt/fast:
+	$(MAKE) $(MAKESILENT) -f CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/build.make CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/build
+.PHONY : fmt/fast
+
+CPP_Playground/Code/iterations.o: CPP_Playground/Code/iterations.cpp.o
+.PHONY : CPP_Playground/Code/iterations.o
+
+# target to build an object file
+CPP_Playground/Code/iterations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o
+.PHONY : CPP_Playground/Code/iterations.cpp.o
+
+CPP_Playground/Code/iterations.i: CPP_Playground/Code/iterations.cpp.i
+.PHONY : CPP_Playground/Code/iterations.i
+
+# target to preprocess a source file
+CPP_Playground/Code/iterations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.i
+.PHONY : CPP_Playground/Code/iterations.cpp.i
+
+CPP_Playground/Code/iterations.s: CPP_Playground/Code/iterations.cpp.s
+.PHONY : CPP_Playground/Code/iterations.s
+
+# target to generate assembly for a file
+CPP_Playground/Code/iterations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.s
+.PHONY : CPP_Playground/Code/iterations.cpp.s
+
+CPP_Playground/Code/main.o: CPP_Playground/Code/main.cpp.o
+.PHONY : CPP_Playground/Code/main.o
+
+# target to build an object file
+CPP_Playground/Code/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o
+.PHONY : CPP_Playground/Code/main.cpp.o
+
+CPP_Playground/Code/main.i: CPP_Playground/Code/main.cpp.i
+.PHONY : CPP_Playground/Code/main.i
+
+# target to preprocess a source file
+CPP_Playground/Code/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.i
+.PHONY : CPP_Playground/Code/main.cpp.i
+
+CPP_Playground/Code/main.s: CPP_Playground/Code/main.cpp.s
+.PHONY : CPP_Playground/Code/main.s
+
+# target to generate assembly for a file
+CPP_Playground/Code/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.s
+.PHONY : CPP_Playground/Code/main.cpp.s
+
+CPP_Playground/Code/pointers.o: CPP_Playground/Code/pointers.cpp.o
+.PHONY : CPP_Playground/Code/pointers.o
+
+# target to build an object file
+CPP_Playground/Code/pointers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o
+.PHONY : CPP_Playground/Code/pointers.cpp.o
+
+CPP_Playground/Code/pointers.i: CPP_Playground/Code/pointers.cpp.i
+.PHONY : CPP_Playground/Code/pointers.i
+
+# target to preprocess a source file
+CPP_Playground/Code/pointers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.i
+.PHONY : CPP_Playground/Code/pointers.cpp.i
+
+CPP_Playground/Code/pointers.s: CPP_Playground/Code/pointers.cpp.s
+.PHONY : CPP_Playground/Code/pointers.s
+
+# target to generate assembly for a file
+CPP_Playground/Code/pointers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.s
+.PHONY : CPP_Playground/Code/pointers.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -123,7 +266,22 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... CPP_Executable"
+	@echo "... fmt"
+	@echo "... CPP_Playground/Code/iterations.o"
+	@echo "... CPP_Playground/Code/iterations.i"
+	@echo "... CPP_Playground/Code/iterations.s"
+	@echo "... CPP_Playground/Code/main.o"
+	@echo "... CPP_Playground/Code/main.i"
+	@echo "... CPP_Playground/Code/main.s"
+	@echo "... CPP_Playground/Code/pointers.o"
+	@echo "... CPP_Playground/Code/pointers.i"
+	@echo "... CPP_Playground/Code/pointers.s"
 .PHONY : help
 
 

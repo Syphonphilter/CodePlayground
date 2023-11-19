@@ -1,39 +1,19 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "name": "C/C++: clang build and debug active file",
+            "name": "Run CPP_Executable",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${workspaceFolder}/build/CPP_Executable",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "C/C++: clang build active file"
-        },
-        {
-            "name": "C++ Debug",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}/build/CPP_Playground", // Path to your executable
-            "args": [], // Any arguments to pass to the executable
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "build" // Optional: Task to run before debugging
+            "preLaunchTask": "Build CPP_Executable",
+            "miDebuggerPath": "/usr/local/bin/gdb" // Specify the path to GDB if necessary
         }
     ]
 }

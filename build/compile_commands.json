@@ -1,8 +1,32 @@
 [
 {
   "directory": "/Users/syphonphilter/Projects/Playground/build",
-  "command": "/usr/bin/clang++ -DFMT_SHARED -isystem /Users/syphonphilter/anaconda3/include -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Playground.dir/Code/main.cpp.o -c /Users/syphonphilter/Projects/Playground/C++-Playground/Code/main.cpp",
-  "file": "/Users/syphonphilter/Projects/Playground/C++-Playground/Code/main.cpp",
-  "output": "CMakeFiles/CPP_Playground.dir/Code/main.cpp.o"
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/main.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/main.cpp",
+  "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o"
+},
+{
+  "directory": "/Users/syphonphilter/Projects/Playground/build",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/pointers.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/pointers.cpp",
+  "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o"
+},
+{
+  "directory": "/Users/syphonphilter/Projects/Playground/build",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/iterations.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/iterations.cpp",
+  "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o"
+},
+{
+  "directory": "/Users/syphonphilter/Projects/Playground/build/CPP_Playground/Utils/fmt-10.1.0",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/fmt.dir/src/format.cc.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/src/format.cc",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/src/format.cc",
+  "output": "CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/src/format.cc.o"
+},
+{
+  "directory": "/Users/syphonphilter/Projects/Playground/build/CPP_Playground/Utils/fmt-10.1.0",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/fmt.dir/src/os.cc.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/src/os.cc",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/src/os.cc",
+  "output": "CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/src/os.cc.o"
 }
 ]

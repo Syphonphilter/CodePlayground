@@ -1,9 +1,6 @@
 {
+    "cmake.sourceDirectory": "/Users/syphonphilter/Projects/Playground",
     "files.associations": {
         "iostream": "cpp"
-    },
-    "cmake.sourceDirectory": "/Users/syphonphilter/Projects/Playground/C++-Playground/Code",
-    "C_Cpp.errorSquiggles": "disabled",
-    "cmake.options.statusBarVisibility": "visible",
-    "cmake.useCMakePresets": "always"
+    }
 }

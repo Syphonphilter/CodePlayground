@@ -1,0 +1,128 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CPP_Playground/Utils/fmt-10.1.0/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 383,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 395,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 398,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 401,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"CPP_Playground/Utils/fmt-10.1.0/libfmtd.a"
+			],
+			"targetId" : "fmt::@08577c9905d2d1aa20fc",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/fmt",
+			"paths" : 
+			[
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/args.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/chrono.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/color.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/compile.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/core.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/format.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/format-inl.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/os.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/ostream.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/printf.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/ranges.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/std.h",
+				"CPP_Playground/Utils/fmt-10.1.0/include/fmt/xchar.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/fmt",
+			"paths" : 
+			[
+				"build/CPP_Playground/Utils/fmt-10.1.0/fmt-config.cmake",
+				"build/CPP_Playground/Utils/fmt-10.1.0/fmt-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/fmt",
+			"exportName" : "fmt-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "fmt::@08577c9905d2d1aa20fc",
+					"index" : 1
+				},
+				{
+					"id" : "fmt-header-only::@08577c9905d2d1aa20fc",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/Export/b834597d9b1628ff12ae4314c3a2e4b8/fmt-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"build/CPP_Playground/Utils/fmt-10.1.0/fmt.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "CPP_Playground/Utils/fmt-10.1.0",
+		"source" : "CPP_Playground/Utils/fmt-10.1.0"
+	}
+}
