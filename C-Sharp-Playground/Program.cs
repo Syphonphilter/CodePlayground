@@ -18,9 +18,8 @@ class Program
 
     static void Main()
     {
-        var staff = new PrimaryConstructors.Employee(1, "Bala", "Jr Developer");
-        var promoted = staff.Promote("Sr Developer", 3);
-        Console.WriteLine(promoted);
+        int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
+        Console.WriteLine(SortedArrayToBST(arr));
 
     }
     public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g, int h, int i)
@@ -179,5 +178,35 @@ class Program
         Traverse(root);
         Console.WriteLine("hre");
         return stack.Reverse().ToList();
+    }
+    public static TreeNode SortedArrayToBST(int[] nums)
+    {
+
+        TreeNode node;
+        //base case 
+        if (nums.Length <= 1)
+            return node = new TreeNode(nums[nums[0]]);
+
+        static TreeNode BuildTreeFromLeaves(int[] leaves, int left, int right)
+        {
+            if (left > right)
+            {
+                return null;
+            }
+
+            // Find the middle index
+            int mid = (left + right) / 2;
+
+            // Create a new TreeNode using the middle element
+            TreeNode node = new TreeNode(leaves[mid]);
+
+            // Recursively build the left and right subtrees
+            node.left = BuildTreeFromLeaves(leaves, left, mid - 1);
+            node.right = BuildTreeFromLeaves(leaves, mid + 1, right);
+
+            return node;
+        }
+        return BuildTreeFromLeaves(nums, 0, nums.Length - 1);
+
     }
 }
