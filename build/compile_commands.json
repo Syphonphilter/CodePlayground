@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/syphonphilter/Projects/Playground/build",
+  "command": "/usr/bin/clang++ -DFMT_SHARED -isystem /Users/syphonphilter/anaconda3/include -g -std=gnu++11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Playground.dir/Code/main.cpp.o -c /Users/syphonphilter/Projects/Playground/C++-Playground/Code/main.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/C++-Playground/Code/main.cpp",
+  "output": "CMakeFiles/CPP_Playground.dir/Code/main.cpp.o"
+}
+]
