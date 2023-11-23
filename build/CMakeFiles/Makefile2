@@ -98,12 +98,12 @@ CPP_Playground/Utils/fmt-10.1.0/clean: CPP_Playground/Utils/fmt-10.1.0/CMakeFile
 CMakeFiles/CPP_Executable.dir/all: CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=1,2,3,4 "Built target CPP_Executable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target CPP_Executable"
 .PHONY : CMakeFiles/CPP_Executable.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CPP_Executable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/syphonphilter/Projects/Playground/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/syphonphilter/Projects/Playground/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CPP_Executable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/syphonphilter/Projects/Playground/build/CMakeFiles 0
 .PHONY : CMakeFiles/CPP_Executable.dir/rule
@@ -124,7 +124,7 @@ CMakeFiles/CPP_Executable.dir/clean:
 CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/all:
 	$(MAKE) $(MAKESILENT) -f CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/build.make CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/build.make CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=5,6,7 "Built target fmt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=6,7,8 "Built target fmt"
 .PHONY : CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/all
 
 # Build rule for subdir invocation for target.

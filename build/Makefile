@@ -259,6 +259,30 @@ CPP_Playground/Code/pointers.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.s
 .PHONY : CPP_Playground/Code/pointers.cpp.s
 
+CPP_Playground/Code/structures.o: CPP_Playground/Code/structures.cpp.o
+.PHONY : CPP_Playground/Code/structures.o
+
+# target to build an object file
+CPP_Playground/Code/structures.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o
+.PHONY : CPP_Playground/Code/structures.cpp.o
+
+CPP_Playground/Code/structures.i: CPP_Playground/Code/structures.cpp.i
+.PHONY : CPP_Playground/Code/structures.i
+
+# target to preprocess a source file
+CPP_Playground/Code/structures.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.i
+.PHONY : CPP_Playground/Code/structures.cpp.i
+
+CPP_Playground/Code/structures.s: CPP_Playground/Code/structures.cpp.s
+.PHONY : CPP_Playground/Code/structures.s
+
+# target to generate assembly for a file
+CPP_Playground/Code/structures.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.s
+.PHONY : CPP_Playground/Code/structures.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +306,9 @@ help:
 	@echo "... CPP_Playground/Code/pointers.o"
 	@echo "... CPP_Playground/Code/pointers.i"
 	@echo "... CPP_Playground/Code/pointers.s"
+	@echo "... CPP_Playground/Code/structures.o"
+	@echo "... CPP_Playground/Code/structures.i"
+	@echo "... CPP_Playground/Code/structures.s"
 .PHONY : help
 
 

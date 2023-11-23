@@ -3,7 +3,7 @@
 
 using namespace fmt;
 using std::cout;
-int main()
+int iterations()
 {
 
     int array[]{0, 2, 3, 4, 5, 5};
@@ -23,7 +23,7 @@ int main()
             break;
         print("element is {}\n", e, string);
     }
-    // for loop with pointers
+    // for loop with pointers and testing for null terminators
     for (auto *p = string; *p; ++p)
     {
         print("element is {}\n", *p);

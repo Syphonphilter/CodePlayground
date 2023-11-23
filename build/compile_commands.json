@@ -18,6 +18,12 @@
   "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o"
 },
 {
+  "directory": "/Users/syphonphilter/Projects/Playground/build",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/structures.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/structures.cpp",
+  "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o"
+},
+{
   "directory": "/Users/syphonphilter/Projects/Playground/build/CPP_Playground/Utils/fmt-10.1.0",
   "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/fmt.dir/src/format.cc.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/src/format.cc",
   "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/src/format.cc",

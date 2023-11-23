@@ -16,6 +16,7 @@ add_executable(CPP_Executable
 CPP_Playground/Code/main.cpp
 CPP_Playground/Code/pointers.cpp
 CPP_Playground/Code/iterations.cpp
+CPP_Playground/Code/structures.cpp
  )
 
 # Link the fmt library with your executable
