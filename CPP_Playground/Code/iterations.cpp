@@ -8,7 +8,15 @@ int main()
 
     int array[]{0, 2, 3, 4, 5, 5};
     const char string[]{"string"};
-    // for loop wiht range
+    // printing with and without null terminator
+    for (const auto &e : string)
+    {
+
+        // remove this if you dont want null temrinator
+        if (e)
+            print("element is {}\n", e);
+    }
+    // for loop with range
     for (const auto &e : string)
     {
         if (e == 0)
