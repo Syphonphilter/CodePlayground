@@ -19,7 +19,7 @@ class Program
     static void Main()
     {
         int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
-        Console.WriteLine(SortedArrayToBST(arr));
+        Console.WriteLine(MaxDepth_3(CreateSampleTree(1,2,3,4,5,6,7,8,8)));
 
     }
     public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g, int h, int i)
