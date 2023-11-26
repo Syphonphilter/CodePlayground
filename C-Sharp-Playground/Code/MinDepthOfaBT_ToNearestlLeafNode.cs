@@ -11,7 +11,7 @@ namespace C_Sharp_Playground.Code
             }
 
             int minDepth = int.MaxValue;
-
+            Console.WriteLine(minDepth);
             void GetMinDepth(TreeNode node, int depth)
             {
                 if (node.left == null && node.right == null)

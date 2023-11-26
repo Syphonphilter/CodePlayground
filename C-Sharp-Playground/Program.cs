@@ -19,10 +19,11 @@ class Program
     static void Main()
     {
         int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
-        Console.WriteLine(MaxDepth_3(CreateSampleTree(1,2,3,4,5,6,7,8,8)));
+        Console.WriteLine(HasPathSumFunc(CreateSampleTree(1, 2, 3, 4, 5, 6, 7), 7));
+
 
     }
-    public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g, int h, int i)
+    public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g)
     {
         // Creating nodes
         TreeNode root = new TreeNode(a);
@@ -32,18 +33,16 @@ class Program
         TreeNode node5 = new TreeNode(e);
         TreeNode node6 = new TreeNode(f);
         TreeNode node7 = new TreeNode(g);
-        TreeNode node8 = new TreeNode(h);
-        TreeNode node9 = new TreeNode(i);
+
 
         // Building the tree
         root.left = node2;
         root.right = node3;
-        node3.left = node4;
-        node3.right = node5;
-        node4.left = node6;
-        node4.right = node7;
-        node7.left = node8;
-        node7.right = node9;
+        node2.left = node4;
+        node2.right = node5;
+        node3.left = node6;
+        node3.right = node7;
+
 
         return root;
     }
@@ -207,6 +206,59 @@ class Program
             return node;
         }
         return BuildTreeFromLeaves(nums, 0, nums.Length - 1);
+
+    }
+
+    public static bool HasPathSumFunc(TreeNode root, int targetNum)
+    {
+        if (root == null)
+        {
+            return false;
+        }
+
+
+        int sumOfNodes = 0;
+        bool found = false;
+        bool GetToLeaf(TreeNode node, int depth)
+        {
+            bool issame = false;
+
+            if (node.left == null && node.right == null)
+            {
+                sumOfNodes += node.val;
+                if (targetNum == sumOfNodes)
+                {
+                    issame = true;
+                    found = true;
+                    return issame;
+                }
+                else
+                {
+                    issame = false;
+                    return issame;
+                }
+            }
+
+            if (node.left != null)
+            {
+                sumOfNodes += node.val;
+                GetToLeaf(node.left, depth + 1);
+
+            }
+
+            if (node.right != null)
+            {
+                sumOfNodes += node.val;
+                GetToLeaf(node.right, depth + 1);
+
+            }
+            issame = found == true ? issame = true : issame = false;
+            return issame;
+        }
+
+
+
+        return GetToLeaf(root, 1);
 
     }
 }
