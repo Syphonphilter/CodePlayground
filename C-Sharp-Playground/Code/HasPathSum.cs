@@ -12,44 +12,52 @@ namespace C_Sharp_Playground.Code
             bool found = false;
             bool GetToLeaf(TreeNode node, int depth)
             {
-                
-                bool issame = false;
-                if (node.left == null && node.right == null)
+                if (found)
                 {
-                    s.Push(node.val);
-                    if (targetNum == s.Sum())
-                    {
-                        issame = true;
-                        found = true;
-                        return issame;
-                    }
-                    else
-                    {
-                        s.Pop();
-                        issame = false;
-                        return issame;
-                    }
+                    return found;
                 }
-                if (node.left != null)
+                else
                 {
-                    s.Push(node.val);
-                    GetToLeaf(node.left, depth + 1);
-                    if (node.right == null)
-                    {
-                        s.Pop();
-                    }
-                }
-                if (node.right != null)
-                {
-                    if (node.left == null)
+                    bool issame = false;
+                    if (node.left == null && node.right == null)
                     {
                         s.Push(node.val);
+                        if (targetNum == s.Sum())
+                        {
+                            issame = true;
+                            found = true;
+                            return issame;
+                        }
+                        else
+                        {
+                            s.Pop();
+                            issame = false;
+                            return issame;
+                        }
                     }
-                    GetToLeaf(node.right, depth + 1);
-                    s.Pop();
+                    if (node.left != null)
+                    {
+                        s.Push(node.val);
+                        GetToLeaf(node.left, depth + 1);
+                        if (node.right == null)
+                        {
+                            s.Pop();
+                        }
+                    }
+                    if (node.right != null)
+                    {
+                        if (node.left == null)
+                        {
+                            s.Push(node.val);
+                        }
+                        GetToLeaf(node.right, depth + 1);
+                        s.Pop();
+                    }
+                    issame = found == true ? issame = true : issame = false;
+                    return issame;
                 }
-                issame = found == true ? issame = true : issame = false;
-                return issame;
+
+
             }
             return GetToLeaf(root, 1);
 
