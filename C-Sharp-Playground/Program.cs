@@ -19,29 +19,22 @@ class Program
     static void Main()
     {
         int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
-        Console.WriteLine(HasPathSumFunc(CreateSampleTree(1, 2, 3, 4, 5, 6, 7), 7));
+        Console.WriteLine(HasPathSumFunc(CreateSampleTree(-2, 2, -3), -2));
 
 
     }
-    public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g)
+    public static TreeNode CreateSampleTree(int a, int b, int c)
     {
         // Creating nodes
         TreeNode root = new TreeNode(a);
-        TreeNode node2 = new TreeNode(b);
+        TreeNode node2 = null;
         TreeNode node3 = new TreeNode(c);
-        TreeNode node4 = new TreeNode(d);
-        TreeNode node5 = new TreeNode(e);
-        TreeNode node6 = new TreeNode(f);
-        TreeNode node7 = new TreeNode(g);
 
 
         // Building the tree
         root.left = node2;
         root.right = node3;
-        node2.left = node4;
-        node2.right = node5;
-        node3.left = node6;
-        node3.right = node7;
+
 
 
         return root;
@@ -217,7 +210,7 @@ class Program
         }
 
 
-        int sumOfNodes = 0;
+        Stack<int> s = new Stack<int>();
         bool found = false;
         bool GetToLeaf(TreeNode node, int depth)
         {
@@ -225,8 +218,8 @@ class Program
 
             if (node.left == null && node.right == null)
             {
-                sumOfNodes += node.val;
-                if (targetNum == sumOfNodes)
+                s.Push(node.val);
+                if (targetNum == s.Sum())
                 {
                     issame = true;
                     found = true;
@@ -234,6 +227,7 @@ class Program
                 }
                 else
                 {
+                    s.Pop();
                     issame = false;
                     return issame;
                 }
@@ -241,15 +235,21 @@ class Program
 
             if (node.left != null)
             {
-                sumOfNodes += node.val;
+                s.Push(node.val);
                 GetToLeaf(node.left, depth + 1);
 
             }
 
             if (node.right != null)
             {
-                sumOfNodes += node.val;
+                if (node.left == null)
+                {
+                    s.Push(node.val);
+                }
+
                 GetToLeaf(node.right, depth + 1);
+                s.Pop();
+
 
             }
             issame = found == true ? issame = true : issame = false;
