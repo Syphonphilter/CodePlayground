@@ -18,12 +18,14 @@ class Program
 
     static void Main()
     {
-        int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
-
-        Console.WriteLine(HasPathSumFunc(CreateSampleTree(1, -2, -3, 1, 3, -2, 1, -1), 3));
+        int[] a = { 1, 3 };
+        var b = a.Concat(a.Reverse()).ToArray();
+        Console.WriteLine(b);
 
 
     }
+
+    #region misc
     public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g, int h)
     {
         // Creating nodes
@@ -50,8 +52,6 @@ class Program
 
         return root;
     }
-
-
     public static int MaxDepth(TreeNode root)
     {
         var leftNode = root.left;
@@ -81,7 +81,6 @@ class Program
         }
         return depth;
     }
-
     public static int MaxDepth_3(TreeNode root)
     {
         if (root == null)
@@ -213,7 +212,6 @@ class Program
         return BuildTreeFromLeaves(nums, 0, nums.Length - 1);
 
     }
-
     public static bool HasPathSumFunc(TreeNode root, int targetNum)
     {
         if (root == null)
@@ -278,4 +276,38 @@ class Program
         return GetToLeaf(root, 1);
 
     }
+    public static List<List<int>> Generate(int numRows)
+    {
+        List<List<int>> row = new List<List<int>>();
+
+        int inc = 0;
+        int[] current = { };
+        for (int i = 1; i <= numRows; i++)
+        {
+            int[] cells = { };
+
+            int elementsToMid = i % 2 == 0 ? i / 2 : Math.Abs(i / 2) + 1;
+            if (i <= 2)
+            {
+                cells.Append(1);
+                current = cells;
+            }
+            else
+            {
+                for (int j = 0; j <= elementsToMid - 1; i++)
+                {
+                    cells.Append(current[j] + current[j + 1]);
+                }
+                current = cells;
+
+            }
+            row.Add(cells.ToList());
+
+
+        }
+        return row;
+
+    }
 }
+
+#endregion
