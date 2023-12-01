@@ -11,6 +11,7 @@ using System.Numerics;
 using C_Sharp_Playground.Code.Functions;
 using System.Collections;
 using C_Sharp_Playground.Code.Concepts;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 
 class Program
 {
@@ -18,8 +19,7 @@ class Program
 
     static void Main()
     {
-        Console.WriteLine(Generate(5));
-
+        Console.WriteLine();
 
     }
 
@@ -274,48 +274,43 @@ class Program
         return GetToLeaf(root, 1);
 
     }
-    public static List<List<int>> Generate(int numRows)
+    public static IList<IList<int>> Generate(int numRows)
     {
         List<List<int>> row = new List<List<int>>();
-
-        int inc = 0;
+        // current list state
         List<int> current = new List<int>();
         for (int i = 1; i <= numRows; i++)
         {
             List<int> cells = new List<int>();
-            List<int> rcells = new List<int>(cells);
-
             int elementsToMid = i % 2 == 0 ? i / 2 : Math.Abs(i / 2) + 1;
             if (i <= 2)
             {
                 current.Add(1);
                 cells = current;
-
             }
             else
             {
+                cells.Add(1);
                 for (int j = 0; j <= elementsToMid - 1; j++)
                 {
-                    cells.Add(current[j] + current[j + 1]);
+                    if (j == elementsToMid - 1)
+                    {
+                        Console.WriteLine(j);
+                    }
+                    else
+                    {
+                        cells.Add(current[j] + current[j + 1]);
+                    }
                 }
-                if (cells.Count % 2 == 1)
-                {
-                    cells.Take(cells.Count - 1);
-                }
+                List<int> rcells = i % 2 == 0 ? new List<int>(cells) : cells.Take(cells.Count - 1).ToList();
                 rcells.Reverse();
                 cells.AddRange(rcells);
-                current = cells;
-
-
-
             }
-            
-
-            row.Add(cells);
-
+            row.Add(new List<int>(cells));
+            current = cells;
 
         }
-        return row;
+        return row.ToArray();
 
     }
 }

@@ -29,7 +29,7 @@ namespace C_Sharp_Playground.Code.Concepts
     {
         void Mainn()
         {
-            Service service = new Service();
+            IService service = new Service();
             User user = new User(service);
             user.Start();
         }
