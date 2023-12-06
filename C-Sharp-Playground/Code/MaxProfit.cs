@@ -1,0 +1,7 @@
+namespace C_Sharp_Playground.Code
+{
+    public class MaxProfit
+    {
+        
+    }
+}

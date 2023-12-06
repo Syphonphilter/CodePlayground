@@ -19,11 +19,13 @@ class Program
 
     static void Main()
     {
-        Console.WriteLine();
+        int[] prices = { 7, 6, 5, 4, 3, 2, 1 };
+        Console.WriteLine(MaxProfit(prices));
 
     }
 
     #region misc
+
     public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g, int h)
     {
         // Creating nodes
@@ -313,6 +315,26 @@ class Program
         return row.ToArray();
 
     }
+
+    #endregion
+
+    public static int MaxProfit(int[] prices)
+    {
+        int min_pos = Array.IndexOf(prices, prices.Min());
+        int buy = min_pos == prices.Length - 1 ? -1 : prices[min_pos];
+        prices = prices[min_pos..];
+        if (buy != -1)
+        {
+            return prices.Max() - buy;
+        }
+        else
+        {
+            return 0;
+        }
+
+
+    }
 }
 
-#endregion
+
+
