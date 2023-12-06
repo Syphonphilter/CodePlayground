@@ -12,6 +12,7 @@ using C_Sharp_Playground.Code.Functions;
 using System.Collections;
 using C_Sharp_Playground.Code.Concepts;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel;
+using System.Runtime.InteropServices;
 
 class Program
 {
@@ -19,7 +20,7 @@ class Program
 
     static void Main()
     {
-        int[] prices = { 7, 6, 5, 4, 3, 2, 1 };
+        int[] prices = { 3, 2, 6, 5, 0, 3 };
         Console.WriteLine(MaxProfit(prices));
 
     }
@@ -320,19 +321,26 @@ class Program
 
     public static int MaxProfit(int[] prices)
     {
-        int min_pos = Array.IndexOf(prices, prices.Min());
-        int buy = min_pos == prices.Length - 1 ? -1 : prices[min_pos];
-        prices = prices[min_pos..];
-        if (buy != -1)
-        {
-            return prices.Max() - buy;
-        }
-        else
+
+        if (prices.Length == 0)
         {
             return 0;
         }
+        prices = prices.Where(c => c > 0).ToArray();
+        int min_pos = Array.IndexOf(prices, prices.Min());
+        if (min_pos == prices.Length - 1)
+        {
 
+            prices = prices[..^1];
+            return MaxProfit(prices);
+        }
 
+        else
+        {
+            prices = prices[min_pos..];
+
+            return prices.Max() - prices[0];
+        }
     }
 }
 
