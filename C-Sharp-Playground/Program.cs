@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices.ComTypes;
+﻿
+using System.Runtime.InteropServices.ComTypes;
 using System;
 using System.Collections.Generic;
 using System.Formats.Asn1;
@@ -13,6 +14,7 @@ using System.Collections;
 using C_Sharp_Playground.Code.Concepts;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 using System.Runtime.InteropServices;
+using C_Sharp_Playground.Code.Utils;
 
 class Program
 {
@@ -20,8 +22,9 @@ class Program
 
     static void Main()
     {
-        int[] prices = { 3, 2, 6, 5, 0, 3 };
-        Console.WriteLine(MaxProfit(prices));
+        int[] prices = { 2, 1, 2, 1, 0, 1, 2 };
+        int max = MaxProfit(Stress.stupidArray);
+        Console.WriteLine(max);
 
     }
 
@@ -326,21 +329,19 @@ class Program
         {
             return 0;
         }
-        prices = prices.Where(c => c > 0).ToArray();
-        int min_pos = Array.IndexOf(prices, prices.Min());
-        if (min_pos == prices.Length - 1)
+        int max = 0;
+        int minPos = Array.IndexOf(prices, prices.Min());
+        prices = prices[minPos..];
+        for (int i = 0; i < prices.Length - 1; i++)
         {
+            int[] tempPrices = { };
+            int currentDay = prices[i];
+            tempPrices = prices[(i + 1)..];
+            int currentProfit = tempPrices.Max() - currentDay;
+            max = currentProfit > max ? currentProfit : max;
 
-            prices = prices[..^1];
-            return MaxProfit(prices);
         }
-
-        else
-        {
-            prices = prices[min_pos..];
-
-            return prices.Max() - prices[0];
-        }
+        return max;
     }
 }
 
