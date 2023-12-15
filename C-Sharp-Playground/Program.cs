@@ -22,9 +22,9 @@ class Program
 
     static void Main()
     {
-        int[] prices = { 2, 1, 2, 1, 0, 1, 2 };
-        int max = MaxProfit(Stress.stupidArray);
-        Console.WriteLine(max);
+        string s = "A man, a plan, a canal: Panama";
+        var x = isPalindrome(s);
+        Console.WriteLine(x);
 
     }
 
@@ -342,6 +342,22 @@ class Program
 
         }
         return max;
+    }
+
+    public static bool isPalindrome(string s)
+    {
+        bool response;
+        char[] inputArray = s.ToCharArray();
+        string[] outputarray = { };
+
+        for (int i = 0; i <= s.Length - 1; i++)
+        {
+            outputarray = !Regex.IsMatch(inputArray[i].ToString(), "[a-zA-Z]") ? outputarray : outputarray.Append(inputArray[i].ToString()).ToArray();
+        }
+        string reverse = string.Join("", outputarray.Reverse()).ToLowerInvariant();
+        string final = string.Join("", outputarray).ToLowerInvariant();
+        response = reverse == final ? true : false;
+        return response;
     }
 }
 
