@@ -346,20 +346,14 @@ class Program
 
     public static bool isPalindrome(string s)
     {
+        s = s.ToLower();
         bool response;
-        char[] inputArray = s.ToCharArray();
-        string[] outputarray = { };
-
-        for (int i = 0; i <= s.Length - 1; i++)
-        {
-            outputarray = !Regex.IsMatch(inputArray[i].ToString(), "[a-zA-Z]") ? outputarray : outputarray.Append(inputArray[i].ToString()).ToArray();
-        }
-        string reverse = string.Join("", outputarray.Reverse()).ToLowerInvariant();
-        string final = string.Join("", outputarray).ToLowerInvariant();
+        char[] inputArray = (from c in s where Char.IsLetter(c) || Char.IsDigit(c) select c).ToArray();
+        string reverse = string.Join("", inputArray.Reverse());
+        string final = string.Join("", inputArray);
         response = reverse == final ? true : false;
         return response;
     }
 }
-
 
 
