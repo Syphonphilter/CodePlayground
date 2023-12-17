@@ -22,7 +22,7 @@ class Program
 
     static void Main()
     {
-        int[] nums = { 4, 1, 2, 1, 2 };
+        int[] nums = { 4 };
         var x = sLidingWindowSingleNo(nums);
         Console.WriteLine(x);
 
@@ -356,18 +356,19 @@ class Program
     }
     public static int sLidingWindowSingleNo(int[] nums)
     {
-        int window = 2;
         List<int> windowValues = new List<int>();
         if (nums.Length == 1)
         {
-            return 1;
+            return nums[0];
         }
         else
         {
-            for (int i = 0; i < window; i++)
+            Dictionary<int, int> keys = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
             {
                 if (windowValues.Contains(nums[i]))
                 {
+                    keys.Add(nums[i], nums[i]);
                     windowValues.Remove(nums[i]);
                 }
                 else
@@ -376,19 +377,14 @@ class Program
                 }
 
             }
-
-
-            for (int i = window; i < nums.Length; i++)
+            foreach (var item in windowValues)
             {
-                if (windowValues.Contains(nums[i]))
+                if (keys.ContainsKey(item))
                 {
-                    windowValues.Remove(nums[i]);
-                }
-                else
-                {
-                    windowValues.Add(nums[i]);
+                    windowValues.Remove(item);
                 }
             }
+
             return windowValues[0];
         }
     }
