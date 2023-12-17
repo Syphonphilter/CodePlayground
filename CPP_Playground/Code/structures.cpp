@@ -9,11 +9,3 @@ struct SS
     double d{};
     const char *s{};
 };
-int main()
-{
-    SS s1{1, 4.3, "string one"};
-    auto *sp = &s1;
-    sp->d = 30.1;
-
-    print("elements are {} {} {} \n", sp->i, sp->d, sp->s);
-}

@@ -17,6 +17,12 @@ CPP_Playground/Code/main.cpp
 CPP_Playground/Code/pointers.cpp
 CPP_Playground/Code/iterations.cpp
 CPP_Playground/Code/structures.cpp
+CPP_Playground/Code/floatingPointTypes.cpp
+CPP_Playground/Code/autoType.cpp
+CPP_Playground/Code/qualifiers.cpp
+CPP_Playground/Code/typeAliases.cpp
+CPP_Playground/Code/primitiveArrays.cpp
+CPP_Playground/Code/Exercises/primeNumbers.cpp
  )
 
 # Link the fmt library with your executable

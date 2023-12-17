@@ -187,6 +187,78 @@ fmt/fast:
 	$(MAKE) $(MAKESILENT) -f CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/build.make CPP_Playground/Utils/fmt-10.1.0/CMakeFiles/fmt.dir/build
 .PHONY : fmt/fast
 
+CPP_Playground/Code/Exercises/primeNumbers.o: CPP_Playground/Code/Exercises/primeNumbers.cpp.o
+.PHONY : CPP_Playground/Code/Exercises/primeNumbers.o
+
+# target to build an object file
+CPP_Playground/Code/Exercises/primeNumbers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o
+.PHONY : CPP_Playground/Code/Exercises/primeNumbers.cpp.o
+
+CPP_Playground/Code/Exercises/primeNumbers.i: CPP_Playground/Code/Exercises/primeNumbers.cpp.i
+.PHONY : CPP_Playground/Code/Exercises/primeNumbers.i
+
+# target to preprocess a source file
+CPP_Playground/Code/Exercises/primeNumbers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.i
+.PHONY : CPP_Playground/Code/Exercises/primeNumbers.cpp.i
+
+CPP_Playground/Code/Exercises/primeNumbers.s: CPP_Playground/Code/Exercises/primeNumbers.cpp.s
+.PHONY : CPP_Playground/Code/Exercises/primeNumbers.s
+
+# target to generate assembly for a file
+CPP_Playground/Code/Exercises/primeNumbers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.s
+.PHONY : CPP_Playground/Code/Exercises/primeNumbers.cpp.s
+
+CPP_Playground/Code/autoType.o: CPP_Playground/Code/autoType.cpp.o
+.PHONY : CPP_Playground/Code/autoType.o
+
+# target to build an object file
+CPP_Playground/Code/autoType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o
+.PHONY : CPP_Playground/Code/autoType.cpp.o
+
+CPP_Playground/Code/autoType.i: CPP_Playground/Code/autoType.cpp.i
+.PHONY : CPP_Playground/Code/autoType.i
+
+# target to preprocess a source file
+CPP_Playground/Code/autoType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.i
+.PHONY : CPP_Playground/Code/autoType.cpp.i
+
+CPP_Playground/Code/autoType.s: CPP_Playground/Code/autoType.cpp.s
+.PHONY : CPP_Playground/Code/autoType.s
+
+# target to generate assembly for a file
+CPP_Playground/Code/autoType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.s
+.PHONY : CPP_Playground/Code/autoType.cpp.s
+
+CPP_Playground/Code/floatingPointTypes.o: CPP_Playground/Code/floatingPointTypes.cpp.o
+.PHONY : CPP_Playground/Code/floatingPointTypes.o
+
+# target to build an object file
+CPP_Playground/Code/floatingPointTypes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o
+.PHONY : CPP_Playground/Code/floatingPointTypes.cpp.o
+
+CPP_Playground/Code/floatingPointTypes.i: CPP_Playground/Code/floatingPointTypes.cpp.i
+.PHONY : CPP_Playground/Code/floatingPointTypes.i
+
+# target to preprocess a source file
+CPP_Playground/Code/floatingPointTypes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.i
+.PHONY : CPP_Playground/Code/floatingPointTypes.cpp.i
+
+CPP_Playground/Code/floatingPointTypes.s: CPP_Playground/Code/floatingPointTypes.cpp.s
+.PHONY : CPP_Playground/Code/floatingPointTypes.s
+
+# target to generate assembly for a file
+CPP_Playground/Code/floatingPointTypes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.s
+.PHONY : CPP_Playground/Code/floatingPointTypes.cpp.s
+
 CPP_Playground/Code/iterations.o: CPP_Playground/Code/iterations.cpp.o
 .PHONY : CPP_Playground/Code/iterations.o
 
@@ -259,6 +331,54 @@ CPP_Playground/Code/pointers.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.s
 .PHONY : CPP_Playground/Code/pointers.cpp.s
 
+CPP_Playground/Code/primitiveArrays.o: CPP_Playground/Code/primitiveArrays.cpp.o
+.PHONY : CPP_Playground/Code/primitiveArrays.o
+
+# target to build an object file
+CPP_Playground/Code/primitiveArrays.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o
+.PHONY : CPP_Playground/Code/primitiveArrays.cpp.o
+
+CPP_Playground/Code/primitiveArrays.i: CPP_Playground/Code/primitiveArrays.cpp.i
+.PHONY : CPP_Playground/Code/primitiveArrays.i
+
+# target to preprocess a source file
+CPP_Playground/Code/primitiveArrays.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.i
+.PHONY : CPP_Playground/Code/primitiveArrays.cpp.i
+
+CPP_Playground/Code/primitiveArrays.s: CPP_Playground/Code/primitiveArrays.cpp.s
+.PHONY : CPP_Playground/Code/primitiveArrays.s
+
+# target to generate assembly for a file
+CPP_Playground/Code/primitiveArrays.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.s
+.PHONY : CPP_Playground/Code/primitiveArrays.cpp.s
+
+CPP_Playground/Code/qualifiers.o: CPP_Playground/Code/qualifiers.cpp.o
+.PHONY : CPP_Playground/Code/qualifiers.o
+
+# target to build an object file
+CPP_Playground/Code/qualifiers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o
+.PHONY : CPP_Playground/Code/qualifiers.cpp.o
+
+CPP_Playground/Code/qualifiers.i: CPP_Playground/Code/qualifiers.cpp.i
+.PHONY : CPP_Playground/Code/qualifiers.i
+
+# target to preprocess a source file
+CPP_Playground/Code/qualifiers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.i
+.PHONY : CPP_Playground/Code/qualifiers.cpp.i
+
+CPP_Playground/Code/qualifiers.s: CPP_Playground/Code/qualifiers.cpp.s
+.PHONY : CPP_Playground/Code/qualifiers.s
+
+# target to generate assembly for a file
+CPP_Playground/Code/qualifiers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.s
+.PHONY : CPP_Playground/Code/qualifiers.cpp.s
+
 CPP_Playground/Code/structures.o: CPP_Playground/Code/structures.cpp.o
 .PHONY : CPP_Playground/Code/structures.o
 
@@ -283,6 +403,30 @@ CPP_Playground/Code/structures.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.s
 .PHONY : CPP_Playground/Code/structures.cpp.s
 
+CPP_Playground/Code/typeAliases.o: CPP_Playground/Code/typeAliases.cpp.o
+.PHONY : CPP_Playground/Code/typeAliases.o
+
+# target to build an object file
+CPP_Playground/Code/typeAliases.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o
+.PHONY : CPP_Playground/Code/typeAliases.cpp.o
+
+CPP_Playground/Code/typeAliases.i: CPP_Playground/Code/typeAliases.cpp.i
+.PHONY : CPP_Playground/Code/typeAliases.i
+
+# target to preprocess a source file
+CPP_Playground/Code/typeAliases.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.i
+.PHONY : CPP_Playground/Code/typeAliases.cpp.i
+
+CPP_Playground/Code/typeAliases.s: CPP_Playground/Code/typeAliases.cpp.s
+.PHONY : CPP_Playground/Code/typeAliases.s
+
+# target to generate assembly for a file
+CPP_Playground/Code/typeAliases.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP_Executable.dir/build.make CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.s
+.PHONY : CPP_Playground/Code/typeAliases.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -297,6 +441,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CPP_Executable"
 	@echo "... fmt"
+	@echo "... CPP_Playground/Code/Exercises/primeNumbers.o"
+	@echo "... CPP_Playground/Code/Exercises/primeNumbers.i"
+	@echo "... CPP_Playground/Code/Exercises/primeNumbers.s"
+	@echo "... CPP_Playground/Code/autoType.o"
+	@echo "... CPP_Playground/Code/autoType.i"
+	@echo "... CPP_Playground/Code/autoType.s"
+	@echo "... CPP_Playground/Code/floatingPointTypes.o"
+	@echo "... CPP_Playground/Code/floatingPointTypes.i"
+	@echo "... CPP_Playground/Code/floatingPointTypes.s"
 	@echo "... CPP_Playground/Code/iterations.o"
 	@echo "... CPP_Playground/Code/iterations.i"
 	@echo "... CPP_Playground/Code/iterations.s"
@@ -306,9 +459,18 @@ help:
 	@echo "... CPP_Playground/Code/pointers.o"
 	@echo "... CPP_Playground/Code/pointers.i"
 	@echo "... CPP_Playground/Code/pointers.s"
+	@echo "... CPP_Playground/Code/primitiveArrays.o"
+	@echo "... CPP_Playground/Code/primitiveArrays.i"
+	@echo "... CPP_Playground/Code/primitiveArrays.s"
+	@echo "... CPP_Playground/Code/qualifiers.o"
+	@echo "... CPP_Playground/Code/qualifiers.i"
+	@echo "... CPP_Playground/Code/qualifiers.s"
 	@echo "... CPP_Playground/Code/structures.o"
 	@echo "... CPP_Playground/Code/structures.i"
 	@echo "... CPP_Playground/Code/structures.s"
+	@echo "... CPP_Playground/Code/typeAliases.o"
+	@echo "... CPP_Playground/Code/typeAliases.i"
+	@echo "... CPP_Playground/Code/typeAliases.s"
 .PHONY : help
 
 

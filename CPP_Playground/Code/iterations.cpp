@@ -8,6 +8,9 @@ int iterations()
 
     int array[]{0, 2, 3, 4, 5, 5};
     const char string[]{"string"};
+    // above string is the same as
+    const char s[]{'s', 't', 'r', 'i', 'n', 'g', 0};
+    // return 0 as the null terminator
     // printing with and without null terminator
     for (const auto &e : string)
     {

@@ -24,6 +24,42 @@
   "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o"
 },
 {
+  "directory": "/Users/syphonphilter/Projects/Playground/build",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/floatingPointTypes.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/floatingPointTypes.cpp",
+  "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o"
+},
+{
+  "directory": "/Users/syphonphilter/Projects/Playground/build",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/autoType.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/autoType.cpp",
+  "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o"
+},
+{
+  "directory": "/Users/syphonphilter/Projects/Playground/build",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/qualifiers.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/qualifiers.cpp",
+  "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o"
+},
+{
+  "directory": "/Users/syphonphilter/Projects/Playground/build",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/typeAliases.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/typeAliases.cpp",
+  "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o"
+},
+{
+  "directory": "/Users/syphonphilter/Projects/Playground/build",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/primitiveArrays.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/primitiveArrays.cpp",
+  "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o"
+},
+{
+  "directory": "/Users/syphonphilter/Projects/Playground/build",
+  "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/Exercises/primeNumbers.cpp",
+  "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/Exercises/primeNumbers.cpp",
+  "output": "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o"
+},
+{
   "directory": "/Users/syphonphilter/Projects/Playground/build/CPP_Playground/Utils/fmt-10.1.0",
   "command": "/usr/bin/clang++  -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Code -I/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/include -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -o CMakeFiles/fmt.dir/src/format.cc.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/src/format.cc",
   "file": "/Users/syphonphilter/Projects/Playground/CPP_Playground/Utils/fmt-10.1.0/src/format.cc",
