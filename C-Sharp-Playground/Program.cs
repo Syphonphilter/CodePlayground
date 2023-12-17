@@ -22,8 +22,8 @@ class Program
 
     static void Main()
     {
-        string s = "A man, a plan, a canal: Panama";
-        var x = isPalindrome(s);
+        int[] nums = { 4, 1, 2, 1, 2 };
+        var x = sLidingWindowSingleNo(nums);
         Console.WriteLine(x);
 
     }
@@ -353,6 +353,44 @@ class Program
         string final = string.Join("", inputArray);
         response = reverse == final ? true : false;
         return response;
+    }
+    public static int sLidingWindowSingleNo(int[] nums)
+    {
+        int window = 2;
+        List<int> windowValues = new List<int>();
+        if (nums.Length == 1)
+        {
+            return 1;
+        }
+        else
+        {
+            for (int i = 0; i < window; i++)
+            {
+                if (windowValues.Contains(nums[i]))
+                {
+                    windowValues.Remove(nums[i]);
+                }
+                else
+                {
+                    windowValues.Add(nums[i]);
+                }
+
+            }
+
+
+            for (int i = window; i < nums.Length; i++)
+            {
+                if (windowValues.Contains(nums[i]))
+                {
+                    windowValues.Remove(nums[i]);
+                }
+                else
+                {
+                    windowValues.Add(nums[i]);
+                }
+            }
+            return windowValues[0];
+        }
     }
 }
 
