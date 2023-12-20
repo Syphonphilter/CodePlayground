@@ -69,136 +69,150 @@ include CMakeFiles/CPP_Executable.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CPP_Executable.dir/flags.make
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/main.cpp
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/main.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/main.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/main.cpp
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/main.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.i
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/main.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.i
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/main.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.s
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/main.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.s
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/pointers.cpp
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/pointers.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/pointers.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/pointers.cpp
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/pointers.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.i
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/pointers.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.i
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/pointers.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.s
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/pointers.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.s
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/iterations.cpp
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/iterations.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/iterations.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/iterations.cpp
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/iterations.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.i
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/iterations.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.i
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/iterations.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.s
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/iterations.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.s
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/structures.cpp
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/structures.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/structures.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/structures.cpp
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/structures.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.i
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/structures.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.i
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/structures.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.s
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/structures.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.s
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/floatingPointTypes.cpp
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/floatingPointTypes.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/floatingPointTypes.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.i
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.i
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/floatingPointTypes.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.s
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.s
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/autoType.cpp
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/autoType.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/autoType.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/autoType.cpp
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/autoType.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.i
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/autoType.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.i
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/autoType.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.s
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/autoType.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.s
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/qualifiers.cpp
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/qualifiers.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/qualifiers.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/qualifiers.cpp
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/qualifiers.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.i
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/qualifiers.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.i
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/qualifiers.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.s
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/qualifiers.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.s
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/typeAliases.cpp
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/typeAliases.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/typeAliases.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/typeAliases.cpp
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/typeAliases.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.i
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/typeAliases.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.i
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/typeAliases.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.s
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/typeAliases.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.s
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/primitiveArrays.cpp
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/primitiveArrays.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/primitiveArrays.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.i
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.i
 
-CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/primitiveArrays.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.s
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.s
+
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/functions.cpp
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/functions.cpp
+
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/functions.cpp > CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.i
+
+CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/functions.cpp -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.s
 
 CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o: CMakeFiles/CPP_Executable.dir/flags.make
 CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o: /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/Exercises/primeNumbers.cpp
 CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o: CMakeFiles/CPP_Executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o -MF CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o.d -o CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o -c /Users/syphonphilter/Projects/Playground/CPP_Playground/Code/Exercises/primeNumbers.cpp
 
 CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.i: cmake_force
@@ -211,34 +225,36 @@ CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.s: 
 
 # Object files for target CPP_Executable
 CPP_Executable_OBJECTS = \
-"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o" \
-"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o" \
-"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o" \
-"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o" \
-"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o" \
-"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o" \
-"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o" \
-"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o" \
-"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o" \
+"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o" \
+"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o" \
+"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o" \
+"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o" \
+"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o" \
+"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o" \
+"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o" \
+"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o" \
+"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o" \
+"CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o" \
 "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o"
 
 # External object files for target CPP_Executable
 CPP_Executable_EXTERNAL_OBJECTS =
 
-CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o
-CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o
-CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o
-CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o
-CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o
-CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o
-CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o
-CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o
-CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o
+CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o
+CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o
+CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o
+CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o
+CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o
+CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o
+CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o
+CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o
+CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o
+CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o
 CPP_Executable: CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o
 CPP_Executable: CMakeFiles/CPP_Executable.dir/build.make
 CPP_Executable: CPP_Playground/Utils/fmt-10.1.0/libfmtd.a
 CPP_Executable: CMakeFiles/CPP_Executable.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable CPP_Executable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/syphonphilter/Projects/Playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable CPP_Executable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CPP_Executable.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

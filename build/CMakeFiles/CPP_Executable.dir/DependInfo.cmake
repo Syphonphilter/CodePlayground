@@ -8,16 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/autoType.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/autoType.cpp.o.d"
+  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp.o.d"
+  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/functions.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/functions.cpp.o.d"
+  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/iterations.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/iterations.cpp.o.d"
+  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/main.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/main.cpp.o.d"
+  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/pointers.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/pointers.cpp.o.d"
+  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/primitiveArrays.cpp.o.d"
+  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/qualifiers.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/qualifiers.cpp.o.d"
+  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/structures.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/structures.cpp.o.d"
+  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/BasicOperations/typeAliases.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/BasicOperations/typeAliases.cpp.o.d"
   "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/Exercises/primeNumbers.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/Exercises/primeNumbers.cpp.o.d"
-  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/autoType.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/autoType.cpp.o.d"
-  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/floatingPointTypes.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/floatingPointTypes.cpp.o.d"
-  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/iterations.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/iterations.cpp.o.d"
-  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/main.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/main.cpp.o.d"
-  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/pointers.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/pointers.cpp.o.d"
-  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/primitiveArrays.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/primitiveArrays.cpp.o.d"
-  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/qualifiers.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/qualifiers.cpp.o.d"
-  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/structures.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/structures.cpp.o.d"
-  "/Users/syphonphilter/Projects/Playground/CPP_Playground/Code/typeAliases.cpp" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o" "gcc" "CMakeFiles/CPP_Executable.dir/CPP_Playground/Code/typeAliases.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

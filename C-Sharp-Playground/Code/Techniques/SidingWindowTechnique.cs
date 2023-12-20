@@ -33,13 +33,4 @@ class SlidingWindowTechnique
 
         return maxSum;
     }
-
-    static void Main()
-    {
-        int[] nums = { 4, 2, 1, 7, 8, 1, 2, 8, 1, 0 };
-        int k = 3;
-
-        int result = MaxSumSubarray(nums, k);
-        Console.WriteLine($"Maximum sum of a subarray of size {k}: {result}");
-    }
 }

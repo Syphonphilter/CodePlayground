@@ -13,15 +13,16 @@ add_subdirectory(CPP_Playground/Utils/fmt-10.1.0)
 
 # Specify the source files for your executable
 add_executable(CPP_Executable 
-CPP_Playground/Code/main.cpp
-CPP_Playground/Code/pointers.cpp
-CPP_Playground/Code/iterations.cpp
-CPP_Playground/Code/structures.cpp
-CPP_Playground/Code/floatingPointTypes.cpp
-CPP_Playground/Code/autoType.cpp
-CPP_Playground/Code/qualifiers.cpp
-CPP_Playground/Code/typeAliases.cpp
-CPP_Playground/Code/primitiveArrays.cpp
+CPP_Playground/Code/BasicOperations/main.cpp
+CPP_Playground/Code/BasicOperations/pointers.cpp
+CPP_Playground/Code/BasicOperations/iterations.cpp
+CPP_Playground/Code/BasicOperations/structures.cpp
+CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp
+CPP_Playground/Code/BasicOperations/autoType.cpp
+CPP_Playground/Code/BasicOperations/qualifiers.cpp
+CPP_Playground/Code/BasicOperations/typeAliases.cpp
+CPP_Playground/Code/BasicOperations/primitiveArrays.cpp
+CPP_Playground/Code/BasicOperations/functions.cpp
 CPP_Playground/Code/Exercises/primeNumbers.cpp
  )
 

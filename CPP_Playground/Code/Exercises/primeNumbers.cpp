@@ -4,7 +4,7 @@
 using namespace fmt;
 using std::cout;
 
-int main()
+int PrimeNumbers()
 {
     bool prime_flag{false};
     for (auto number = 2; number < 100; ++number)

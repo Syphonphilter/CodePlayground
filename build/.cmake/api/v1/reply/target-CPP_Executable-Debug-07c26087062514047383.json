@@ -32,7 +32,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 29,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
@@ -83,7 +83,8 @@
 				6,
 				7,
 				8,
-				9
+				9,
+				10
 			]
 		}
 	],
@@ -137,7 +138,8 @@
 				6,
 				7,
 				8,
-				9
+				9,
+				10
 			]
 		}
 	],
@@ -146,55 +148,61 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP_Playground/Code/main.cpp",
+			"path" : "CPP_Playground/Code/BasicOperations/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP_Playground/Code/pointers.cpp",
+			"path" : "CPP_Playground/Code/BasicOperations/pointers.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP_Playground/Code/iterations.cpp",
+			"path" : "CPP_Playground/Code/BasicOperations/iterations.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP_Playground/Code/structures.cpp",
+			"path" : "CPP_Playground/Code/BasicOperations/structures.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP_Playground/Code/floatingPointTypes.cpp",
+			"path" : "CPP_Playground/Code/BasicOperations/floatingPointTypes.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP_Playground/Code/autoType.cpp",
+			"path" : "CPP_Playground/Code/BasicOperations/autoType.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP_Playground/Code/qualifiers.cpp",
+			"path" : "CPP_Playground/Code/BasicOperations/qualifiers.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP_Playground/Code/typeAliases.cpp",
+			"path" : "CPP_Playground/Code/BasicOperations/typeAliases.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CPP_Playground/Code/primitiveArrays.cpp",
+			"path" : "CPP_Playground/Code/BasicOperations/primitiveArrays.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "CPP_Playground/Code/BasicOperations/functions.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

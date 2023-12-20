@@ -22,9 +22,9 @@ class Program
 
     static void Main()
     {
-        int[] nums = { 4 };
-        var x = sLidingWindowSingleNo(nums);
-        Console.WriteLine(x);
+        ListNode head = CreateLinkedList(new int[] { 1, 2 });
+        Console.WriteLine(hareTurtleAlgorithm(head));
+
 
     }
 
@@ -321,7 +321,22 @@ class Program
     }
 
     #endregion
+    public static ListNode CreateLinkedList(int[] values)
+    {
+        if (values.Length == 0) return null;
 
+        ListNode head = new ListNode(values[0]);
+        ListNode current = head;
+
+        for (int i = 1; i < values.Length; i++)
+        {
+            ListNode newNode = new ListNode(values[i]);
+            current.next = newNode;
+            current = newNode;
+        }
+
+        return head;
+    }
     public static int MaxProfit(int[] prices)
     {
 
@@ -388,6 +403,26 @@ class Program
             return windowValues[0];
         }
     }
+
+    public static bool hareTurtleAlgorithm(ListNode head)
+    {
+        if (head != null)
+        {
+            ListNode hare = head;
+            ListNode turtle = head;
+            while (hare != null && hare.next != null)
+            {
+                turtle = turtle.next;
+                hare = hare.next.next;
+                if (hare == turtle)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
+
 
 
