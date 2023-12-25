@@ -22,37 +22,23 @@ class Program
 
     static void Main()
     {
-        ListNode head = CreateLinkedList(new int[] { 1, 2 });
-        Console.WriteLine(hareTurtleAlgorithm(head));
+        var head = CreateSampleTree(1);
+        Console.WriteLine(PostorderTraversal(head));
 
 
     }
 
     #region misc
 
-    public static TreeNode CreateSampleTree(int a, int b, int c, int d, int e, int f, int g, int h)
+    public static TreeNode CreateSampleTree(int a)
     {
         // Creating nodes
         TreeNode root = new TreeNode(a);
-        TreeNode node2 = new TreeNode(b);
-        TreeNode node3 = new TreeNode(c);
-        TreeNode node4 = new TreeNode(d);
-        TreeNode node5 = new TreeNode(e);
-        TreeNode node6 = new TreeNode(f);
-        TreeNode node7 = null; // Representing 'null' for the seventh node
-        TreeNode node8 = new TreeNode(h);
 
-        // Building the tree
-        root.left = node2;
-        root.right = node3;
 
-        node2.left = node4;
-        node2.right = node5;
 
-        node3.left = node6;
-        node3.right = node7;
 
-        node4.left = node8; // Attaching node8 as the left child of node4
+
 
         return root;
     }
@@ -422,7 +408,54 @@ class Program
         }
         return false;
     }
+    public static IList<int> PostorderTraversal(TreeNode root)
+    {
+        List<int> list = new List<int>();
+        if (root == null)
+        {
+            return list;
+        }
+
+        void traverse(TreeNode root)
+        {
+            // Check if the node has any child
+            if (root.left != null || root.right != null || (root.left != null && root.right != null))
+            {   // traverse left
+                if (root.left != null)
+                {
+                    traverse(root.left);
+                    list.Add(root.val);
+                }
+                //traverse right
+                if (root.right != null)
+                {
+                    traverse(root.right);
+                    list.Add(root.val);
+                }
+            }
+            else
+            {
+                list.Add(root.val);
+            }
+        }
+        if (root.left != null)
+        {
+
+            traverse(root.left);
+        }
+        if (root.right != null)
+        {
+
+            traverse(root.right);
+        }
+        list.Add(root.val);
+
+        return list;
+    }
+
+
 }
+
 
 
 
