@@ -22,8 +22,15 @@ class Program
 
     static void Main()
     {
-        var head = CreateSampleTree(1);
-        Console.WriteLine(PostorderTraversal(head));
+        List<dynamic> t_list = new List<dynamic>(0)
+        {
+            100,
+            "bala"
+        };
+        foreach (dynamic item in t_list)
+        {
+            Console.WriteLine(item);
+        }
 
 
     }
