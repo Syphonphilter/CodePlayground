@@ -22,15 +22,13 @@ class Program
 
     static void Main()
     {
-        List<dynamic> t_list = new List<dynamic>(0)
-        {
-            100,
-            "bala"
-        };
-        foreach (dynamic item in t_list)
-        {
-            Console.WriteLine(item);
-        }
+        int[] a = { 4, 1, 8, 4, 5 };
+        int[] b = { 5, 6, 1, 8, 4, 5 };
+        ListNode listA = CreateLinkedList(a);
+        ListNode listB = CreateLinkedList(b);
+        var node = GetIntersectionNode(listA, listB);
+        Console.WriteLine(node);
+
 
 
     }
@@ -460,7 +458,46 @@ class Program
         return list;
     }
 
+    public static ListNode GetIntersectionNode(ListNode headA, ListNode headB)
+    {
+        if (headA == null || headB == null) return null;
+        int numsA = getCounter(headA);
+        int numsB = getCounter(headB);
 
+        while (numsA > numsB)
+        {
+            headA = headA.next;
+            numsA--;
+        }
+        while (numsB > numsA)
+        {
+            headB = headB.next;
+            numsB--;
+        }
+
+        while (headA != headB)
+        {
+            headA = headA.next;
+            headB = headB.next;
+        }
+        return headA;
+        int getCounter(ListNode node)
+        {
+            int count = 0;
+            while (node != null)
+            {
+                if (node != null)
+                {
+
+                    count++;
+                    node = node.next;
+                }
+
+            }
+            return count;
+
+        }
+    }
 }
 
 

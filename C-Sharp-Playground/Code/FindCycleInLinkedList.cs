@@ -4,10 +4,12 @@ namespace C_Sharp_Playground.Code
     {
         public bool HasCycle(ListNode head)
         {
+            
 
             if (head != null)
             {
                 ListNode hare = head;
+            
                 ListNode turtle = head;
                 while (hare != null && hare.next != null)
                 {

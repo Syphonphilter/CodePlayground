@@ -26,6 +26,7 @@ class LinkedList{
         this.listLength ++;
         return this
     }
+    // add to the first element
     unshift(value: any) {
         let node = new ListNode(value)
         if (!this.checkEdgeCase()) {
@@ -71,7 +72,7 @@ class LinkedList{
         if (index === this.listLength-1|| this.listLength=== 0) return this.pop();
         if (index < 0 || index > this.listLength) return false;
         let temp = this.get(index - 1)
-        let origin = this.get(index)
+        let origin = temp.next
         temp.next = origin.next
         origin.next = null
         this.listLength--
@@ -91,7 +92,6 @@ class LinkedList{
             if (index === 0) return this.unshift(value);
             if (index === this.listLength) return this.push(value);
             if (index < 0 || index > this.listLength) return false;
-            let counter: number = 0;
             // get position before where you want to insert it
             let temp = this.get(index - 1);
             // point the new node to the next node of the main list from the index
@@ -162,7 +162,9 @@ class LinkedList{
             while (temp.next) {
                 pre = temp
                 temp = temp.next
+                console.log(temp)
             }
+            console.log(temp)
             this.tail = pre;
             this.tail.next = undefined
         }
@@ -190,7 +192,7 @@ class LinkedList{
 let list = new LinkedList(12);
 list.push(145)
 list.push(134)
-list.reverse()
+list.pop()
 
 
 
