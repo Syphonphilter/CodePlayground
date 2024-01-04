@@ -46,15 +46,21 @@ class Graphs {
       }
       return false;
     }
-    removeVertex(vertex: any) {
-        if (!this.adjacencyList[vertex]) return undefined
-        while (this.adjacencyList[vertex].length) {
-            let temp = this.adjacencyList[vertex].pop()
-            this.removeEdge(vertex,temp)
-        
-        }
-        delete this.adjacencyList[vertex]
-        return this
+    /**
+     * Removes a vertex from the graph's adjacency list along with all its associated edges.
+     * @param vertex - The vertex to be removed from the graph.
+     * @returns The updated graph with the specified vertex removed from the adjacency list.
+     */
+    removeVertex(vertex: any): Graphs|undefined {
+      if (!this.adjacencyList[vertex]) return undefined;
+
+      while (this.adjacencyList[vertex].length) {
+        const edge = this.adjacencyList[vertex].pop();
+        this.removeEdge(vertex, edge);
+      }
+
+      delete this.adjacencyList[vertex];
+      return this;
     }
 
 }
