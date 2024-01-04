@@ -58,7 +58,7 @@ class Tree{
         while (currentNode.left) {
             currentNode = currentNode.left
         }
-        return currentNode.value
+        return currentNode
     }
 }
 
