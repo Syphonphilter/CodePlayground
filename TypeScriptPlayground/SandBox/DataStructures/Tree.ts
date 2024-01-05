@@ -1,6 +1,6 @@
 import { TreeNode } from "./TreeNode";
 
-class Tree{
+export class Tree{
     root:TreeNode|null
     constructor() {
         this.root = null
