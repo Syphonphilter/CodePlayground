@@ -59,9 +59,4 @@ print(odd_numbers)
 
 my_dup_list = [3,1,4,1,2]
 my_set = set(my_dup_list)
-print(my_set)
-x = range(1,4)
-#removed duplicates and sorts 
-print(sorted(my_dup_list))
-# sorts all the values
-print(my_dup_list.sort())
+print(my_dup_list[1::3])

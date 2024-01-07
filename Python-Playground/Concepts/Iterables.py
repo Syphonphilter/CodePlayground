@@ -14,3 +14,13 @@ for i in enumerate(names):
 # Hello (0, 'bala')
 # Hello (1, 'gabriel')
 # Hello (2, 'daniel')
+
+def printnumbers (n):
+    for i in range(n):
+        for j in range(n):
+            print(i,j)
+
+
+for i in range(2):
+    print(i)
+
