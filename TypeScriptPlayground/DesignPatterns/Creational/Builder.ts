@@ -1,5 +1,5 @@
-import { string } from "ts-pattern/dist/patterns";
 
+// Create a tag that can allow children
 class Tag
 {
   static get indentSize() { return 2; }
@@ -13,6 +13,7 @@ class Tag
     this.children = [];
   }
 
+  // the tag creator and the Item to be put int the middle  of the tag
   toStringImpl(indent:number)
   {
     let html:string[] = [];
@@ -32,6 +33,7 @@ class Tag
     return html.join();
   }
 
+    // convert the items ot string
   toString()
   {
     return this.toStringImpl(0);
