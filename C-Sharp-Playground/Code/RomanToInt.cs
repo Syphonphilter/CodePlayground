@@ -22,6 +22,7 @@ namespace Playground
             {"M",1000}
         };
         //
+        
 
             for (int c = splitedRomanChars.Length - 1; c >= 0; c--)
             {

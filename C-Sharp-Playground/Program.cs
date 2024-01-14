@@ -15,6 +15,7 @@ using C_Sharp_Playground.Code.Concepts;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 using System.Runtime.InteropServices;
 using C_Sharp_Playground.Code.Utils;
+using System.Runtime;
 
 class Program
 {
@@ -22,17 +23,41 @@ class Program
 
     static void Main()
     {
-        int[] a = { 4, 1, 8, 4, 5 };
+        int[] a = { 1,2,3 };
         int[] b = { 5, 6, 1, 8, 4, 5 };
-        ListNode listA = CreateLinkedList(a);
-        ListNode listB = CreateLinkedList(b);
-        var node = GetIntersectionNode(listA, listB);
-        Console.WriteLine(node);
+    
+       Console.WriteLine( solution("NAANAAXNABAYNNBZ"));
+    
+    }
+     public static int solution(string S)
+{
+    int count = 0;
 
+    string RemoveWord(string input)
+    {
+        string target_banana = "BANANA";
 
+        // Check if the modified string contains the word "BANANA"
+        int index = input.IndexOf(target_banana, StringComparison.OrdinalIgnoreCase);
+        while (index != -1)
+        {
+            input = input.Remove(index, target_banana.Length);
+            count++;
 
+            // Check for the next occurrence
+            index = input.IndexOf(target_banana, StringComparison.OrdinalIgnoreCase);
+        }
+
+        return input;
     }
 
+    // Assign the result of the recursive call back to the input variable
+    S = RemoveWord(S);
+
+    return count;
+}
+
+    
     #region misc
 
     public static TreeNode CreateSampleTree(int a)
