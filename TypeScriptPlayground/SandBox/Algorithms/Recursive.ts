@@ -7,6 +7,30 @@ class Recursive {
     }
     return value * this.factorial(value - 1);
   }
+  factorialRecursive(value: number) {
+    // if value is one then no need to do the factorial
+    // target  = 1*2*3*4*5
+    if (value === 1) {
+      return value;
+    }
+    let factorialValue = 1;
+    for (let i = 2; i <= value + 1; i++) {
+      factorialValue = factorialValue * (i - 1);
+    }
+    return factorialValue;
+  }
+  factorialRecursivev2(value: number) {
+    if (value === 1) {
+      return value;
+    }
+    let factorialValue = value;
+    for (let i = value; i > 0; i--) {
+      if (i != 1) {
+        factorialValue = factorialValue * (i - 1);
+      }
+    }
+    return factorialValue;
+  }
   fibonacci(value: number): number {
     if (value <= 1) {
       return value;
@@ -19,3 +43,5 @@ for (let i = 0; i < 4; i++) {
   console.log(`Fibonacci(${i}):`, recursive.fibonacci(i));
 }
 console.log(recursive.factorial(5));
+console.log(recursive.factorialRecursive(5));
+console.log(recursive.factorialRecursivev2(5));
