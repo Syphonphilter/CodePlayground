@@ -1,25 +1,21 @@
-import { number } from "ts-pattern/dist/patterns"
+import { number } from "ts-pattern/dist/patterns";
 
-class Recursive{
-
-    factorial(value: number):any {
-      
-        if (value === 1) {
-            return 1
-        }
-       return  value * this.factorial(value-1)
+class Recursive {
+  factorial(value: number): number {
+    if (value === 1) {
+      return value;
     }
-    fibbonaci(count: number): any {
-        if (count <= 1) {
-            return count
-        }
-        else {
-            return this.fibbonaci(count-1)+ this.fibbonaci(count-2)
-        }
+    return value * this.factorial(value - 1);
+  }
+  fibonacci(value: number): number {
+    if (value <= 1) {
+      return value;
     }
+    return this.fibonacci(value - 1) + this.fibonacci(value - 2);
+  }
 }
-let recursive = new Recursive()
-for (let i = 0; i < 1; i++) {
-    console.log(`Fibonacci(${i}):`, recursive.fibbonaci(i));
+let recursive = new Recursive();
+for (let i = 0; i < 4; i++) {
+  console.log(`Fibonacci(${i}):`, recursive.fibonacci(i));
 }
-console.log(recursive.factorial(5))
+console.log(recursive.factorial(5));
