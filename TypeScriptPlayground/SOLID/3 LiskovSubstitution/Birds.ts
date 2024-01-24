@@ -20,10 +20,10 @@ class Duck extends FlyingBird{
     }
 }
 
-function makeFlyingBirdFly(bird){
+function makeFlyingBirdFly(bird: Duck){
 bird.fly()
 }
-function makeSwimmingBirdSwim(bird){
+function makeSwimmingBirdSwim(bird: Penguin){
 bird.swim()
 }
 const duck = new Duck
@@ -34,20 +34,20 @@ makeSwimmingBirdSwim(penguin)
 
 //! WHAT IF I WANT TO MAKE A SWIMMING FLYING BIRD SWIM AND FLY
 //* MAKE USE OF COMPOSITION TO DESCRIBE WHAT AN OBJECT CAN DO WHILE INHERITANCE SHOULD DESCRIBE WHAT AN OBJECT IS
-function Swimmer(name ) {
+function Swimmer(name: string ) {
     const birdName = {name:name}
     return {
         swim:()=> console.log(`${birdName.name} can swim`)
     }
 }
-function Flyer(name) {
+function Flyer(name: string) {
     //* object desctucturing
     const birdName = {name:name}
     return {
         fly:()=> console.log(`${birdName.name} can fly`)
     }
 }
-function swimmerAndFlyer(name) {
+function swimmerAndFlyer(name: any) {
     //* object desctucturing
     const birdName = {name:name}
     return {
@@ -55,7 +55,7 @@ function swimmerAndFlyer(name) {
         swim:()=> console.log(`${birdName.name} can swim`)
     }
 }
-function killerAndStronger(name) {
+function killerAndStronger(name: any) {
     //* object desctucturing
     const birdName = {name:name}
     return {
@@ -66,12 +66,12 @@ function killerAndStronger(name) {
 
 
 //* Using higher order functions using desctructuring
-function swimmingFlyingBirdCreator(name) {
+function swimmingFlyingBirdCreator(name: string) {
     const bird = { name: name }
     return {
         ...bird,
         //* rather than doingt his
-        ...Swimmer(bird),
+        ...Swimmer(bird.name),
         ...Flyer(bird.name),
         //* also can so this 
         ...swimmerAndFlyer(bird.name),

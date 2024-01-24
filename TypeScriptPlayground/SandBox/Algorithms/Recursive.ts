@@ -37,6 +37,16 @@ class Recursive {
     }
     return this.fibonacci(value - 1) + this.fibonacci(value - 2);
   }
+  fibonacciIterative(iterations: number) {
+    let fibs: number[] = [0, 1];
+    if (iterations <= 2) {
+      return fibs;
+    }
+    for (let i = 2; i <= iterations; i++) {
+      fibs.push(fibs[i - 1] + fibs[i - 2]);
+    }
+    return fibs.join(",");
+  }
 }
 let recursive = new Recursive();
 for (let i = 0; i < 4; i++) {
@@ -45,3 +55,4 @@ for (let i = 0; i < 4; i++) {
 console.log(recursive.factorial(5));
 console.log(recursive.factorialRecursive(5));
 console.log(recursive.factorialRecursivev2(5));
+console.log(recursive.fibonacciIterative(9));

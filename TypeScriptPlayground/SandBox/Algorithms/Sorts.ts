@@ -1,8 +1,9 @@
 import { P } from "ts-pattern";
 import { array } from "ts-pattern/dist/patterns";
 
-class Sorts {
+export class Sorts {
   // BUBBLE SORT O(N^2)
+  // Iteratively  steps through a list of elements, compares adjacent elements and swaps them if they are in the wrong order.
   bubbleSort(items: number[]) {
     // iterate throught the items in reverse
     for (let i = items.length - 1; i > 0; i--) {
@@ -19,18 +20,24 @@ class Sorts {
     }
     return items;
   }
-
+  //Repetedly finds the smallest index in an unsorted array and pushes the element to beginning of the sorted portion of the array item
   selectionSort(items: number[]) {
+    // set the smallest item to 0
     let smallestIndex = 0;
-
+    // selection sort is O(N^2)
+    // start with the two pointers i and j
     for (let i = 0; i < items.length; i++) {
+      // set the smallest index to i for each iteration of i
       smallestIndex = i;
       for (let j = i + 1; j < items.length; j++) {
+        //iteratively compare j with i to find the smallest
         if (items[smallestIndex] > items[j]) {
+          // if smallest is > than j then j is the smallest
           smallestIndex = j;
         }
       }
 
+      // swap value of the smallest  with i
       let temp = items[i];
       items[i] = items[smallestIndex];
       items[smallestIndex] = temp;
@@ -76,8 +83,8 @@ class Sorts {
     let mid = Math.floor(items.length / 2);
     let left = items.slice(0, mid);
     let right = items.slice(mid);
-    console.log(left);
-    console.log(right);
+    // console.log(left);
+    // console.log(right);
     return this.mergeFunction(this.mergeSort(left), this.mergeSort(right));
   }
   quickSortPivotSwap(array: number[], firstIndex: number, secondIndex: number) {
@@ -117,5 +124,39 @@ class Sorts {
     return array;
   }
 }
+
+class PracticeSorts {
+  bubbleSort(number: number[]) {
+    for (let i = number.length - 1; i >= 0; i--) {
+      for (let j = 0; j < i; j++) {
+        if (number[j + 1] < number[j]) {
+          let temp = number[j + 1];
+          number[j + 1] = number[j];
+          numbers[j] = temp;
+        }
+      }
+    }
+    return numbers;
+  }
+
+  selectionSort(items: number[]) {
+    let smallestIndex = 0;
+    for (let i = 0; i <= items.length - 1; i++) {
+      smallestIndex = i;
+      for (let j = i + 1; j <= items.length - 1; j++) {
+        if (items[smallestIndex] > items[j]) {
+          smallestIndex = j;
+        }
+      }
+      let temp = items[i];
+      items[i] = items[smallestIndex];
+      items[smallestIndex] = temp;
+    }
+    return items;
+  }
+}
 let sort = new Sorts();
-console.log(sort.quickSort([]));
+let psort = new PracticeSorts();
+const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+console.log(sort.selectionSort(numbers));
+console.log(psort.selectionSort(numbers));

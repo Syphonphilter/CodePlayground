@@ -4,18 +4,23 @@ import { string } from "ts-pattern/dist/patterns";
 //* Type Alias
 type stringOrNum = string | number;
 //* Function Definition
+export class Basics {
+  swapper_in_place = (a: number, b: number): [number, number] => {
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    return [a, b];
+  };
+}
 const getAreaOfCircle = (raduis: number) => {
   return Math.PI * raduis ** 2;
 };
+
 // console.log(getAreaOfCircle(20))
-const swapper_in_place = (a: number, b: number): [number, number] => {
-  a = a + b;
-  b = a - b;
-  a = a - b;
-  return [a, b];
-};
 //
-console.log(swapper_in_place(3, 5));
+
+let basics = new Basics();
+//console.log(basics.swapper_in_place(3, 5));
 let greet: Function;
 greet = (name: string) => {
   // console.log(name)
@@ -34,7 +39,8 @@ let any = ["bala", "musa", "musty", 1, 1.0];
 //* push, pop,length,join,indexof
 // console.log(name.indexOf('bala'))
 //* Lists
-
+let myList: number[] = [];
+myList.push(1);
 //* Dictionaries
 const dictionary: { [key: number]: any } = {};
 dictionary[1] = "Bala";
@@ -86,7 +92,7 @@ let chs: school = {
   },
 };
 const saySchool = (school: school) => {
-  console.log(school.name);
+  //console.log(school.name);
 };
 saySchool(chs);
 // YOU CAN ALSO USE INTERFACES WITH CLASSES and when the class object is called,

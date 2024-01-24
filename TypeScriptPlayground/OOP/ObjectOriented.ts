@@ -12,13 +12,13 @@ abstract class BankAccount {
 
   //* 3. constructor is called when ever the instance of the class is being created
 
-  constructor(accountNumber: number, accountBalance) {
+  constructor(accountNumber: number, accountBalance: number) {
     BankAccount.accountNumber = accountNumber;
     BankAccount.accountBalance = accountBalance;
   }
 
   //* 4. abstract class member
-  abstract updateAmount(amount: number);
+  abstract updateAmount(amount: number): number;
   //* public static class member , using static because it is a utility function
   static printStatement() {
     return `Your Account: ${this.accountNumber} has a balance of $ ${this.accountBalance}`;
@@ -43,9 +43,9 @@ class SavingsAccount extends BankAccount {
   }
 
   //* 7. Polymorphism -overloading
-  addIntrest(intrestRate: number);
-  addIntrest(intrestRate: number, taxCuts: number);
-  addIntrest(interestRate: number, taxCuts?: number) {
+  addIntrest(intrestRate: number): any;
+  addIntrest(intrestRate: number, taxCuts: number): any;
+  addIntrest(interestRate: number, taxCuts?: number): any {
     let finalBalance =
       SavingsAccount.accountBalance -
       SavingsAccount.accountBalance * (interestRate / 100);
@@ -71,12 +71,12 @@ class CurrentAccount extends BankAccount {
   }
 
   //* 7. Polymorphism -overloading
-  accountMaintenance(intrestRate: number, maintenanceFee: number);
+  accountMaintenance(intrestRate: number, maintenanceFee: number): any;
   accountMaintenance(
     intrestRate: number,
     maintenanceFee: number,
     taxCuts: number
-  );
+  ): any;
   accountMaintenance(
     interestRate: number,
     maintenanceFee: number,
@@ -114,9 +114,9 @@ class AppUser {
   //* 8 Association: when classes are associated by relationships
   userAccount: SavingsAccount | CurrentAccount;
   userName: string;
-  constructor(userName, userAccount) {
+  constructor(userName: string, userAccount: SavingsAccount | CurrentAccount) {
     this.userName = userName;
-    this, (userAccount = userAccount);
+    this.userAccount = userAccount;
   }
   //* 9. Composition
   ChargeAccount() {
