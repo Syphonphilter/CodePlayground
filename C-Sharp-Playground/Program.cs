@@ -23,12 +23,25 @@ class Program
 
     static void Main()
     {
-        int[] a = { 1,2,3 };
-        int[] b = { 5, 6, 1, 8, 4, 5 };
-    
-       Console.WriteLine( solution("NAANAAXNABAYNNBZ"));
+        double number =  7;
+        Console.WriteLine(tunnelConverter(number));
     
     }
+    
+        public static double tunnelConverter( double number){
+        // define start of the tunnel
+        double tunnelStart = 2.75;
+        // define the end of the tunnel
+        double tunnelEnd = 4.75;
+        // define one mile to meters
+        double _oneMileToMeter = 1600.00;
+        if (number>=tunnelStart && number<=tunnelEnd){
+            double inTunnelConverter = number * _oneMileToMeter;
+            return inTunnelConverter;
+         }
+         return -1;
+    }
+    
      public static int solution(string S)
 {
     int count = 0;

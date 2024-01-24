@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Playground
+namespace C_Sharp_Playground.Code
 {
     public class LongestCommonPrefix
     {

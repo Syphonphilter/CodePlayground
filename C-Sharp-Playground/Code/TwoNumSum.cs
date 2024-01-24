@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Playground
+namespace C_Sharp_Playground
 {
     public class TwoNumSum
     {
@@ -8,7 +8,7 @@ namespace Playground
         }
 
         // A function that returns  the positions of two nums in a given array of n length to get a target sum
-        int[] TwoNums(int[] nums, int target)
+       public int[] TwoNums(int[] nums, int target)
         {
             var watch = new System.Diagnostics.Stopwatch();
             watch.Start();

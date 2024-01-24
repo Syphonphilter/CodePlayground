@@ -1,4 +1,3 @@
-import { expect, test } from "bun:test";
 import { Basics } from "../SandBox/Basics";
 let basics = new Basics();
 test("Swapper in place code", () => {

@@ -2,7 +2,10 @@ using System;
 
 class SlidingWindowTechnique
 {
-    static int MaxSumSubarray(int[] nums, int k)
+    public SlidingWindowTechnique(){
+
+    }
+    public int MaxSumSubarray(int[] nums, int k)
     {
         if (nums == null || nums.Length == 0 || k <= 0 || k > nums.Length)
             return 0;
