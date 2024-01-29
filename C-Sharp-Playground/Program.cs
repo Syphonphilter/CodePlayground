@@ -23,8 +23,14 @@ class Program
 
     static void Main()
     {
-        double number =  7;
-        Console.WriteLine(tunnelConverter(number));
+        string originalString = "PTAD%2FLAG%2FNTL2A%2F0791692%2FPaPD";
+
+        // Escape the string for URL
+        string escapedString = Uri.UnescapeDataString(originalString);
+
+        // Output the result
+        Console.WriteLine("Original String: " + originalString);
+        Console.WriteLine("Escaped String: " + escapedString);
     
     }
     
