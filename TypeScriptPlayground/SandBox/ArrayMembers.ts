@@ -4,6 +4,7 @@ const sampleArray: any[] = [
     42,
     'hello',
     true,
+    { name: 'Alice', age: 31 },
     { name: 'Alice', age: 30 },
     [5, 10, 15],
     null,
@@ -60,8 +61,13 @@ const fruits = sampleArray
   c.fruits)// Filter to get only non-array objects
 // Access the "fruits" property from each nested object
 
+//find
 
-let a = [1, 2, 3, 4]
+const finder = sampleArray.find(item => {
+    return item.name ==='Alice'
+})
+
+
 
 // MAP
 
@@ -124,4 +130,9 @@ const everyObject = sampleArray.every(element => {
     }
 }
 )
-console.log(everyObject)
+
+const myArray  = [
+1,3,
+9,2
+]
+
