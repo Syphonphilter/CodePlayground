@@ -37,11 +37,11 @@ makeSwimmingBirdSwim(penguin)
 function Swimmer(name: string ) {
     const birdName = {name:name}
     return {
-        swim:()=> console.log(`${birdName.name} can swim`)
+        swimo:()=> console.log(`${birdName.name} can swim`)
     }
 }
 function Flyer(name: string) {
-    //* object desctucturing
+    //* object destucturing
     const birdName = {name:name}
     return {
         fly:()=> console.log(`${birdName.name} can fly`)
@@ -85,7 +85,7 @@ function swimmingFlyingBirdCreator(name: string) {
 const obj = Flyer( 'Duck' )
 const objx = Swimmer('Penguin')
 obj.fly()
-objx.swim()
+objx.swimo()
 
 
 // to make a bird swim and fly
@@ -98,3 +98,4 @@ objct1.swim()
 objct2.kill()
 objct2.storng()
 objct2.fly()
+objct2.swimo();
