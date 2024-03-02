@@ -1,4 +1,4 @@
-import { QueueNode } from "./QueueNode";
+import { QueueNode } from "./";';";
 // QUEUE USES FIFO
 class Queue {
   // Queue properties
